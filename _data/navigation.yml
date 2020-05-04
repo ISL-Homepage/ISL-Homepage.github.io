@@ -1,0 +1,33 @@
+# Site navigation links
+
+- title: About
+  url: /about/
+  excerpt: "ISL"
+  image: Res_ISL_Logo2.png
+
+  #Professor, Ph.D Candidates, M.S Candidates, Undergraduate, Alumni
+- title: People
+  url: /people/
+  excerpt: "Professor, Ph.D Candidates, M.S Candidates, Undergraduates, Alumni"
+  image: 
+
+- title: Publication
+  url: /publication/
+  excerpt: "Journal, Conference"
+  image: 
+
+- title: Research
+  url: /research/
+  excerpt: "Interests, Project" 
+  image: 
+
+- title: Lecture
+  url: /lecture/
+  excerpt: "전자회로실험"
+  image: 
+
+- title: Seminar
+  url: /seminar/
+  excerpt: "Seminar, Demo Video"
+  image: 
+
