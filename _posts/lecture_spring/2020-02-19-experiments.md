@@ -31,6 +31,7 @@ ads: false
 * **실험 공지**
 [다운로드](../../attachments/2020_notice/실험 1 실험공지.pdf) 
 * **교재** [다운로드](../../attachments/2020_notice/실험 1_책.pdf) 
+* **결과 보고서 공지** [다운로드](../../attachments/2020_notice/실험1 결과보고서 공지.pdf) 
 
 ## 3주차 실험
 * **실험 공지**
