@@ -71,4 +71,4 @@ ads: false
 ## 10주차 실험
 * **실험 공지**
 [다운로드](../../attachments/2020_notice/10주차 실험공지.pdf) 
-* **9주차 교재** [다운로드](../../attachments/2020_notice/10주차실험교재.pdf)
+* **10주차 교재** [다운로드](../../attachments/2020_notice/10주차실험교재.pdf)
