@@ -78,3 +78,8 @@ ads: false
 * **실험 공지**
 [다운로드](../../attachments/2020_notice/11주차 실험공지.pdf) 
 * **11주차 교재** [다운로드](../../attachments/2020_notice/11주차실험_책.pdf)
+
+## 12주차 실험
+* **실험 공지**
+[다운로드](../../attachments/2020_notice/12주차 실험 공지.pdf) 
+* **12주차 교재** [다운로드](../../attachments/2020_notice/12주차 교재.pdf)
