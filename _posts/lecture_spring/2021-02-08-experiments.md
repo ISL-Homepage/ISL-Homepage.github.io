@@ -1,7 +1,7 @@
 ---
 layout: article
 title: "전자회로실험"
-date: 2020-02-19 14:47:30
+date: 2021-02-08 16:00:00
 author: ISL
 categories: lecture_spring
 excerpt: 
@@ -19,7 +19,7 @@ ads: false
 <!--예시-->
 ## 강의 계획서
 * **강의 계획서** 
-[다운로드](../../attachments/전자회로 실험_2020_syllabus.hwp) 
+<!--[다운로드](../../attachments/전자회로 실험_2020_syllabus.hwp) 
 * **ORCAD 사용법**
 [다운로드](../../attachments/OrCAD 사용법.pdf)   
 
@@ -77,4 +77,4 @@ ads: false
 ## 11주차 실험
 * **실험 공지**
 [다운로드](../../attachments/2020_notice/11주차 실험공지.pdf) 
-* **11주차 교재** [다운로드](../../attachments/2020_notice/11주차실험_책.pdf)
+* **11주차 교재** [다운로드](../../attachments/2020_notice/11주차실험_책.pdf)-->
