@@ -28,4 +28,3 @@ ads: false
 [다운로드](../../attachments/2021_notice/실험1. 실험공지.pdf)
 =======
 
->>>>>>> 5c02ab76d25910c7eadd5902996b495f5522cfca
