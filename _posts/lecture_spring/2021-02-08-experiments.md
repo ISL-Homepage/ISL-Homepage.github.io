@@ -20,4 +20,4 @@ ads: false
 ## 강의 계획서
 * **강의 계획서** 
 : 2021 전자회로실험 syllabus.
-[다운로드](../../attachments/전자회로 실험_2021_syllabus.pdf)
+[다운로드](../../attachments/전자회로 실험_2021_syllabus.hwp)
