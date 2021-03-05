@@ -22,6 +22,11 @@ ads: false
 : 2021 전자회로실험 syllabus.
 [다운로드](../../attachments/전자회로 실험_2021_syllabus.hwp)
 
+## OrCAD 설치 및 사용법
+* **OrCAD 설치 및 사용법** 
+: OrCAD 설치 및 사용법.
+[다운로드](../../attachments/OrCAD 사용법.pdf)
+
 ## 1주차 실험
 * **1주차 실험**
 : 2021 전자회로실험 1주차 공지.
