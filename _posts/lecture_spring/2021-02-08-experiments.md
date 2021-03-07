@@ -17,6 +17,10 @@ ads: false
 {% include toc.html %}
 
 <!--예시-->
+## 2021 전자회로 실험
+* **2021 전자회로 실험 오픈카톡방 url 입니다. (참여코드 : 0372)** 
+: https://open.kakao.com/o/gZuBEg1c
+
 ## 강의 계획서
 * **강의 계획서** 
 : 2021 전자회로실험 syllabus.
@@ -35,3 +39,4 @@ ads: false
 * **1주차 실험 교재 스캔본**
 : 2021 전자회로실험 1주차 교재 스캔본.
 [다운로드](../../attachments/2021_notice/실험 1_책.pdf)
+
