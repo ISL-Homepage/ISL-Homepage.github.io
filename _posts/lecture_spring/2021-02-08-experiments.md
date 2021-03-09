@@ -38,7 +38,7 @@ ads: false
 
 * **1주차 실험 교재 스캔본**
 : 2021 전자회로실험 1주차 교재 스캔본.
-[다운로드](../../attachments/2021_notice/실험 1_책.pdf)
+[다운로드](../../attachments/2021_notice/실험1_책.pdf)
 
 ## 2주차 실험
 * **2주차 실험**
@@ -46,4 +46,4 @@ ads: false
 [다운로드](../../attachments/2021_notice/실험2. 실험공지.pdf)
 * **2주차 실험 교재 스캔본**
 : 2021 전자회로실험 2주차 교재 스캔본.
-[다운로드](../../attachments/2021_notice/실험 2_책.pdf)
+[다운로드](../../attachments/2021_notice/실험2_책.pdf)
