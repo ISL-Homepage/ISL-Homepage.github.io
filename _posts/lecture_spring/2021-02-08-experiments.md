@@ -55,4 +55,4 @@ ads: false
 [다운로드](../../attachments/2021_notice/실험 3 실험공지.pdf)
 * **3주차 실험 교재 스캔본**
 : 2021 전자회로실험 3주차 교재 스캔본.
-[다운로드](../../attachments/2021_notice/실험3_책.PDF)
+[다운로드](../../attachments/2021_notice/실험3_책.pdf)
