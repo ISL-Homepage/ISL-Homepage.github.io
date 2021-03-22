@@ -63,4 +63,4 @@ ads: false
 [다운로드](../../attachments/2021_notice/실험4. 실험공지.pdf)
 * **4주차 실험 교재 스캔본**
 : 2021 전자회로실험 4주차 교재 스캔본.
-[다운로드](../../attachments/2021_notice/실험4_책.PDF)
+[다운로드](../../attachments/2021_notice/실험4_책.pdf)
