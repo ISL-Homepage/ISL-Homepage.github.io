@@ -1,7 +1,7 @@
 ---
 layout: article
 title: "전자회로실험"
-date: 2022-02-22 16:53:00
+date: 2022-02-22 14:47:00
 author: ISL
 categories: lecture_spring
 excerpt: 
