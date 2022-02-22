@@ -1,7 +1,7 @@
 ---
 layout: article
 title: "전자회로실험"
-date: 2021-05-17 14:47:00
+date: 2022-02-22 16:35:00
 author: ISL
 categories: lecture_spring
 excerpt: 
@@ -17,9 +17,7 @@ ads: false
 {% include toc.html %}
 
 <!--예시-->
-## 2021 전자회로 실험
-* **2021 전자회로 실험 오픈카톡방 url 입니다. (참여코드 : 0372)** 
-: https://open.kakao.com/o/gZuBEg1c
+## 2022 전자회로 실험
 
 ## 강의 계획서
 * **강의 계획서** 
@@ -31,6 +29,7 @@ ads: false
 : OrCAD 설치 및 사용법.
 [다운로드](../../attachments/OrCAD 사용법.pdf)
 
+<!--
 ## 프로젝트 공지
 * **프로젝트 공지** 
 : 프로젝트 공지.
@@ -126,3 +125,4 @@ ads: false
 : 2021 전자회로실험 11주차 교재 스캔본.
 [다운로드](../../attachments/2021_notice/11주차 교재.pdf)
 
+-->
