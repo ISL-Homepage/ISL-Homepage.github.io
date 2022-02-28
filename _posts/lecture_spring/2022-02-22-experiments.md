@@ -1,7 +1,7 @@
 ---
 layout: article
 title: "전자회로실험"
-date: 2022-02-21 14:47:00
+date: 2022-02-27 14:47:00
 author: ISL
 categories: lecture_spring
 excerpt: 
@@ -29,3 +29,6 @@ ads: false
 * **OrCAD 설치 및 사용법** 
 : OrCAD 설치 및 사용법.
 [다운로드](../../attachments/OrCAD 사용법.pdf)
+
+## 실험 공지
+* **2주차 실험 공지** [다운로드](../../attachments/2022_noitce/2주차 실험 공지.pdf)
