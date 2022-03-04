@@ -32,12 +32,13 @@ ads: false
 
 
 ## 실험 공지
-* **보고서 양식** [다운로드](../../attachments/2022_noitce/보고서 양식.hwp)
+* **보고서 양식**
+: 실험 보고서 양식.[다운로드](../../attachments/2022_noitce/보고서 양식.hwp)
 
+* **2주차 실험 공지**
+: 2주차 실험 공지.[다운로드](../../attachments/2022_noitce/2주차 실험 공지.pdf)
+: 2주차 실험 교재 스캔본.[다운로드](../../attachments/2022_noitce/2주차 실험 교재.pdf)
 
-* **2주차 실험 공지** [다운로드](../../attachments/2022_noitce/2주차 실험 공지.pdf)
-* **2주차 실험 교재 스캔본** [다운로드](../../attachments/2022_noitce/2주차 실험 교재.pdf)
-
-
-* **3주차 실험 공지** [다운로드](../../attachments/2022_noitce/3주차 실험 공지.pdf)
-* **3주차 실험 교재 스캔본** [다운로드](../../attachments/2022_noitce/3주차 실험 교재.pdf)
+* **3주차 실험 공지**
+: 3주차 실험 공지.[다운로드](../../attachments/2022_noitce/3주차 실험 공지.pdf)
+: 3주차 실험 교재 스캔본.[다운로드](../../attachments/2022_noitce/3주차 실험 교재.pdf)
