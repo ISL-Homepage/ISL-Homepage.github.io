@@ -41,4 +41,4 @@ ads: false
 
 * **3주차 실험 공지**
 : 3주차 실험 공지.[다운로드](../../attachments/2022_noitce/3주차 실험 공지.pdf)
-: 3주차 실험 교재 스캔본.[다운로드](../../attachments/2022_noitce/3주차 실험 교재.pdf)
+: 3주차 실험 교재 스캔본.[다운로드](../../attachments/2022_noitce/실험2_책.PDF)
