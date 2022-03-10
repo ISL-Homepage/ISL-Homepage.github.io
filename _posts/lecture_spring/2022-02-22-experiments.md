@@ -45,4 +45,4 @@ ads: false
 
 * **4주차 실험 공지**
 : 4주차 실험 공지.[다운로드](../../attachments/2022_noitce/4주차 실험 공지.pdf)
-: 4주차 실험 교재 스캔본.[다운로드](../../attachments/2022_noitce/4주차 실험 교재.PDF)
+: 4주차 실험 교재 스캔본.[다운로드](../../attachments/2022_noitce/4주차 실험 교재.pdf)
