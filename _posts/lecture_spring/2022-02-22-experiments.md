@@ -57,3 +57,7 @@ ads: false
 * **7주차 실험 공지**
 : 7주차 실험 공지.[다운로드](../../attachments/2022_noitce/7주차 실험_공지.pdf)
 : 7주차 실험 교재 스캔본.[다운로드](../../attachments/2022_noitce/7주차 실험 교재.pdf)
+
+* **9주차 실험 공지**
+: 9주차 실험 공지.[다운로드](../../attachments/2022_noitce/9주차 실험 공지.pdf)
+: 9주차 실험 교재 스캔본.[다운로드](../../attachments/2022_noitce/9주차 실험 교재.pdf)
