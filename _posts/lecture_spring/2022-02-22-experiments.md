@@ -1,7 +1,7 @@
 ---
 layout: article
 title: "전자회로실험"
-date: 2022-04-10 14:47:00
+date: 2022-04-18 14:47:00
 author: ISL
 categories: lecture_spring
 excerpt: 
@@ -63,7 +63,7 @@ ads: false
 : 7주차 실험 교재 스캔본.[다운로드](../../attachments/2022_noitce/7주차 실험 교재.pdf)
 
 * **8주차 수업 공지**
-: 8주차 수업 공지.[다운로드](../../attachments/2022_noitce/8주차 수업 공지.hwp)
+: 8주차 수업 공지(시간 변경 : 오후 4시 -> 4시 30분).[다운로드](../../attachments/2022_noitce/8주차 수업 공지.hwp)
 
 * **9주차 실험 공지**
 : 9주차 실험 공지.[다운로드](../../attachments/2022_noitce/9주차 실험 공지.pdf)
