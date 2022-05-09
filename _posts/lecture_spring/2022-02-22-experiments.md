@@ -1,7 +1,7 @@
 ---
 layout: article
 title: "전자회로실험"
-date: 2022-04-23 14:47:00
+date: 2022-05-08 14:47:00
 author: ISL
 categories: lecture_spring
 excerpt: 
@@ -76,3 +76,10 @@ ads: false
 * **11주차 실험 공지**
 : 11주차 실험 공지.[다운로드](../../attachments/2022_noitce/11주차 실험 공지.pdf)
 : 11주차 실험 교재 스캔본.[다운로드](../../attachments/2022_noitce/11주차 실험 교재.pdf)
+
+* **12주차 실험 공지**
+: 12주차 실험 공지.[다운로드](../../attachments/2022_noitce/12주차 실험 공지.pdf)
+: 12주차 실험 교재 스캔본.[다운로드](../../attachments/2022_noitce/12주차 실험 교재.pdf)
+
+* **13주차 실험 공지**
+: 13주차 실험 교재 스캔본.[다운로드](../../attachments/2022_noitce/13주차 실험 교재.pdf)
