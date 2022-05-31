@@ -86,4 +86,4 @@ ads: false
 : 13주차 실험 교재 스캔본.[다운로드](../../attachments/2022_noitce/13주차 실험 교재.pdf)
 
 * **14주차 실험 공지**
-: 8주차 수업 공지.[다운로드](../../attachments/2022_noitce/14주차 수업 공지.hwp)
+: 14주차 수업 공지.[다운로드](../../attachments/2022_noitce/14주차 수업 공지.hwp)
