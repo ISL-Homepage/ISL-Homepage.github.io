@@ -28,7 +28,7 @@ ads: false
 ## OrCAD 설치 및 사용법
 * **OrCAD 설치 및 사용법** 
 : OrCAD 설치 및 사용법.
-[다운로드](../../attachments/OrCAD 사용법.pdf)
+[다운로드](../../attachments/2023_OrCAD_사용법.pdf)
 
 <!--
 ## 프로젝트 공지
