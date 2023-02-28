@@ -34,61 +34,61 @@ ads: false
 ## 프로젝트 공지
 * **프로젝트 공지**
 : 2023 프로젝트 설계 공지.
-[다운로드](../../attachments/2022_noitce/설계공지_2022.hwp)
+[다운로드](../../attachments/2023_notice/설계공지_2022.hwp)
 -->
 
 ## 실험 공지
 * **보고서 양식**
-: 실험 보고서 양식.[다운로드](../../attachments/2023_noitce/보고서 양식.hwp)
+: 실험 보고서 양식.[다운로드](../../attachments/2023_notice/보고서 양식.hwp)
 
 * **2주차 실험 공지**
-: 2주차 실험 공지.[다운로드](../../attachments/2023_noitce/2주차 실험 공지.pdf)
-: 2주차 실험 교재 스캔본.[다운로드](../../attachments/2023_noitce/2주차 실험 교재.pdf)
+: 2주차 실험 공지.[다운로드](../../attachments/2023_notice/2주차 실험 공지.pdf)
+: 2주차 실험 교재 스캔본.[다운로드](../../attachments/2023_notice/2주차 실험 교재.pdf)
 
 <!--
 * **3주차 실험 공지**
-: 3주차 실험 공지.[다운로드](../../attachments/2022_noitce/3주차 실험 공지.pdf)
-: 3주차 실험 교재 스캔본.[다운로드](../../attachments/2022_noitce/실험2_책.PDF)
+: 3주차 실험 공지.[다운로드](../../attachments/2023_notice/3주차 실험 공지.pdf)
+: 3주차 실험 교재 스캔본.[다운로드](../../attachments/2023_notice/실험2_책.PDF)
 
 * **4주차 실험 공지**
-: 4주차 실험 공지.[다운로드](../../attachments/2022_noitce/4주차 실험 공지.pdf)
-: 4주차 실험 교재 스캔본.[다운로드](../../attachments/2022_noitce/4주차 실험 교재.pdf)
+: 4주차 실험 공지.[다운로드](../../attachments/2023_notice/4주차 실험 공지.pdf)
+: 4주차 실험 교재 스캔본.[다운로드](../../attachments/2023_notice/4주차 실험 교재.pdf)
 
 * **5주차 실험 공지**
-: 5주차 실험 공지.[다운로드](../../attachments/2022_noitce/5주차 실험 공지.pdf)
-: 5주차 실험 교재 스캔본.[다운로드](../../attachments/2022_noitce/5주차 실험 교재.pdf)
+: 5주차 실험 공지.[다운로드](../../attachments/2023_notice/5주차 실험 공지.pdf)
+: 5주차 실험 교재 스캔본.[다운로드](../../attachments/2023_notice/5주차 실험 교재.pdf)
 
 * **6주차 실험 공지**
-: 6주차 실험 공지.[다운로드](../../attachments/2022_noitce/6주차 실험 공지.pdf)
+: 6주차 실험 공지.[다운로드](../../attachments/2023_notice/6주차 실험 공지.pdf)
 
 * **7주차 실험 공지**
-: 7주차 실험 공지.[다운로드](../../attachments/2022_noitce/7주차 실험_공지.pdf)
-: 7주차 실험 교재 스캔본.[다운로드](../../attachments/2022_noitce/7주차 실험 교재.pdf)
+: 7주차 실험 공지.[다운로드](../../attachments/2023_notice/7주차 실험_공지.pdf)
+: 7주차 실험 교재 스캔본.[다운로드](../../attachments/2023_notice/7주차 실험 교재.pdf)
 
 * **8주차 수업 공지**
-: 8주차 수업 공지(시간 변경 : 오후 4시 -> 4시 30분).[다운로드](../../attachments/2022_noitce/8주차 수업 공지.hwp)
+: 8주차 수업 공지(시간 변경 : 오후 4시 -> 4시 30분).[다운로드](../../attachments/2023_notice/8주차 수업 공지.hwp)
 
 * **9주차 실험 공지**
-: 9주차 실험 공지.[다운로드](../../attachments/2022_noitce/9주차 실험 공지.pdf)
-: 9주차 실험 교재 스캔본.[다운로드](../../attachments/2022_noitce/9주차 실험 교재.pdf)
+: 9주차 실험 공지.[다운로드](../../attachments/2023_notice/9주차 실험 공지.pdf)
+: 9주차 실험 교재 스캔본.[다운로드](../../attachments/2023_notice/9주차 실험 교재.pdf)
 
 * **10주차 실험 공지**
-: 10주차 실험 공지.[다운로드](../../attachments/2022_noitce/10주차 실험 공지.pdf)
-: 10주차 실험 교재 스캔본.[다운로드](../../attachments/2022_noitce/10주차 실험 교재.pdf)
+: 10주차 실험 공지.[다운로드](../../attachments/2023_notice/10주차 실험 공지.pdf)
+: 10주차 실험 교재 스캔본.[다운로드](../../attachments/2023_notice/10주차 실험 교재.pdf)
 
 * **11주차 실험 공지**
-: 11주차 실험 공지.[다운로드](../../attachments/2022_noitce/11주차 실험 공지.pdf)
-: 11주차 실험 교재 스캔본.[다운로드](../../attachments/2022_noitce/11주차 실험 교재.pdf)
+: 11주차 실험 공지.[다운로드](../../attachments/2023_notice/11주차 실험 공지.pdf)
+: 11주차 실험 교재 스캔본.[다운로드](../../attachments/2023_notice/11주차 실험 교재.pdf)
 
 * **12주차 실험 공지**
-: 12주차 실험 공지.[다운로드](../../attachments/2022_noitce/12주차 실험 공지.pdf)
-: 12주차 실험 교재 스캔본.[다운로드](../../attachments/2022_noitce/12주차 실험 교재.pdf)
+: 12주차 실험 공지.[다운로드](../../attachments/2023_notice/12주차 실험 공지.pdf)
+: 12주차 실험 교재 스캔본.[다운로드](../../attachments/2023_notice/12주차 실험 교재.pdf)
 
 * **13주차 실험 공지**
-: 13주차 실험 공지.[다운로드](../../attachments/2022_noitce/13주차 실험 공지.pdf)
-: 13주차 실험 교재 스캔본.[다운로드](../../attachments/2022_noitce/13주차 실험 교재.pdf)
+: 13주차 실험 공지.[다운로드](../../attachments/2023_notice/13주차 실험 공지.pdf)
+: 13주차 실험 교재 스캔본.[다운로드](../../attachments/2023_notice/13주차 실험 교재.pdf)
 
 * **14주차 실험 공지**
-: 14주차 수업 공지.[다운로드](../../attachments/2022_noitce/14주차 수업 공지.hwp)
+: 14주차 수업 공지.[다운로드](../../attachments/2023_notice/14주차 수업 공지.hwp)
 
 -->
