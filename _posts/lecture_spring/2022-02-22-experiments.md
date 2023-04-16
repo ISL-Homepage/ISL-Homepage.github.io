@@ -1,7 +1,7 @@
 ---
 layout: article
 title: "전자회로실험"
-date: 2023-03-27 14:47:00
+date: 2023-04-15 14:47:00
 author: ISL
 categories: lecture_spring
 excerpt: 
@@ -59,12 +59,10 @@ ads: false
 * **7주차 실험 공지**
 : 7주차 실험 공지.[다운로드](../../attachments/2023_notice/7주차 실험 공지.pdf)
 
-<!--
-
-
 * **8주차 수업 공지**
-: 8주차 수업 공지(시간 변경 : 오후 4시 -> 4시 30분).[다운로드](../../attachments/2023_notice/8주차 수업 공지.hwp)
+: 8주차 수업 공지[다운로드](../../attachments/2023_notice/8주차 수업 공지.pdf)
 
+<!--
 * **9주차 실험 공지**
 : 9주차 실험 공지.[다운로드](../../attachments/2023_notice/9주차 실험 공지.pdf)
 
@@ -82,5 +80,4 @@ ads: false
 
 * **14주차 실험 공지**
 : 14주차 수업 공지.[다운로드](../../attachments/2023_notice/14주차 수업 공지.hwp)
-
 -->
