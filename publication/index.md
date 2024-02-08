@@ -21,10 +21,10 @@ ads: false
 
 ## Journal 
 ### International Journal
-* **2022**
+* **2022**  
   Bu-Geun Paik, Jong-Woo Ahn, Hongseok Jeong, Hanshin Seol, Jae-Yeol Song, Yun-Ho Ko, “Experimental study on the frequency characteristics of cloud cavitation on a full-spade rudder of a ship”, Ocean Engineering, Vol. 253, pp. 1-12, June 2022.
 
-* **2021**
+* **2021**  
   Taewon Kim, Youngsoo Choi, Yun-ho Ko, “Development of underwater 3D shape measurement system with improved radiation tolerance”, Nuclear Engineering and Technology, Vol. 53, Issue 4, pp. 1189-1198, April 2021.
 
 * **2014**  
@@ -43,7 +43,7 @@ ads: false
   
   Moon-Jai Lim, Chan-Hee Han, Si-Woong Lee, and Yun-Ho Ko, "Fast Shape Matching Using Statistical Features of Shape Contexts", IEICE Transactions on Information and Systems, vol.E94-D, no. 10, pp. 2056-2058, October, 2011.
 
-* **2009**
+* **2009**   
   Haechul Choi, Ho Chul Shin, Si-Woong Lee, and Yun-Ho Ko, "Moments Added Statistical Shape Model for Boundary Extraction", IEICE Transactions on Information and Systems, vol.E92-D, no.12, pp.2524-2526, December, 2009.
 
 * **2007**  
@@ -60,12 +60,12 @@ ads: false
   Jae-Soo Cho , Byoung-Ju Yun and Yun-Ho Ko, "Precision Tracking Based-on Fuzzy Reasoning Segmentation in Cluttered Image Sequences", Lecture Notes in Artificial Intelligence, vol.3682, pp371-377, Sep. 2005.  
 
 ### Domestic Journal
-* **2023**
+* **2023**   
   안재원, 고윤호, “부유선별공정 모니터링을 위한 다변수 가우시안 혼합모델기반 색상 분석”, 멀티미디어학회 논문지, 제26권, 제3호, pp.457-464, 2023. 3
 
   백부근, 안종우, 박영하, 송재열, 고윤호, “함정의 평판형 방향타 캐비테이션 침식에 대한 모형 시험 연구”, 대한조선학회논문집, 제60권, 제1호, pp.31-37, 2023, 1
 
-* **2022** 
+* **2022**  
   김미정, 고윤호, “DeepLabV3+를 이용한 이종 센서의 구름탐지 기법 연구”, 대한원격탐사학회지, Vol. 38, No. 5-1, pp.511-521, 2022. 10
 
   민경철, 고윤호, “지형 참조 비행을 위한 Quad BTC 기반의 DSM 파일 압축”, 한국항공우주학회지, 제50권, 제7호, pp.515-521, 2022, 7
@@ -74,17 +74,17 @@ ads: false
 
   Mi-Jeong Kim, Yun-Ho Ko, “Performance Analysis of Cloud-Net with Cross-sensor Training Dataset for Satellite Image-based Cloud Detection”, (대한원격탐사학회지) Korean Journal of Remote Sensing, Vol. 38, No. 1, pp.103-110, 2022. 2
 
-* **2021** 
+* **2021**   
   백부근, 안종우, 정홍석, 설한신, 송재열, 고윤호, “함정용 방향타에서 발생하는 구름(cloud) 캐비테이션의 주파수 특성에 대한 실험적 연구”, 대한조선학회논문집, 제58권, 제3호, pp.167-174, 2021, 6
 
-* **2019** 
+* **2019**   
   강한솔, 고윤호, “백색 보조 띠 기반의 정밀 스테레오 정합 기법”, 멀티미디어학회 논문지, 제22권, 제12호, pp.1356-1367, 2019. 12
 
   안재원, 고윤호, “천장지향 2D-LiDAR 회전 모듈을 이용한 실내 주행 로봇의 천장 기반 위치 추정”, 멀티미디어학회 논문지, 제22권, 제7호, pp.780-789, 2019. 7
 
   김근태, 고윤호, “분할 블록 OBMC와 개선된 적응 가중 중간값 필터를 이용한 프레임률 증가 기법”, 한국산업정보학회논문지, 제24권, 제1호, pp.1-12, 2019, 1
 
-* **2017** 
+* **2017**  
   전현호, 고윤호, “3D-2D 모션 추정을 위한 LiDAR 정보 보간 알고리즘”, 멀티미디어학회 논문지, 제20권, 제12호, pp.1865-1873, 2017. 12
 
   전현호, 김진형, 고윤호, “강인한 선별적 특징군 기반 단안 Visual Odometry”, 제어로봇시스템학회 논문지, 제23권, 제12호, pp.1063-1069, 2017. 12
@@ -93,7 +93,7 @@ ads: false
 
   안재원, 고윤호, “HLS 색상 공간에서 동영상의 안개제거 기법”, 멀티미디어학회 논문지, 제20권, 제1호, pp.32-42, 2017. 1
 
-* **2016** 
+* **2016**  
   최성민, 고윤호, 강영신, “무인항공기 시스템을 활용한 선박 식별 및 도시 시스템 개발”, 한국항공우주학회지, 제44권, 제10호, pp.862-870, 2016, 10
 
   김진욱, 고윤호, 이시웅, “LCD 결함 검출 성능 개선을 위한 대표점 기반의 영역 탐색을 이용한 적응적 이진화 기법”, 한국콘텐츠학회논문지, 제16권, 제7호, pp.689-699, 2016. 7
@@ -140,19 +140,19 @@ ads: false
 
 ## Conference  
 ### International Conference
-* **2020**
+* **2020**   
   Yun-Ho Ko, Ho-Hyoung Choi, Byung-Ju Yun, "Motion Vector Refinement Method using Improved AWVM for Frame Rate Up Conversion" ICEIC(International Conference on Electronics, Information, and Communication) 2020, pp.597-599, January, 19-22(20), 2020, Barcelona(Melia Barcelona Sarria), Spain
 
-* **2019**
+* **2019**   
   Han-Sol Kang, Yun-Ho Ko, Si-Woong Lee, Byung-Ju Yun, "Retinex Algorithm using Contrast Modification and Saturation Correction for Color Image Enhancement" ICEIC(International Conference on Electronics, Information, and Communication) 2019, pp.759-760, January, 22-25(23), 2019, Auckland(Pullman Auckland Hotel), New Zealand
 
-* **2018**
+* **2018**   
   Hyun Ho Jeon, Yun-Ho Ko, "LiDAR Data Interpolation Algorithm for Visual Odometry Based on 3D-2D Motion Estimation" ICEIC(International Conference on Electronics, Information, and Communication) 2018, pp.1249-1250, January, 24-27(26), 2018, Honolulu, USA
 
-* **2017**
+* **2017**   
   Jae Won An, Yun-Ho Ko, "Haze Removal Method for Moving Image Sequence Using Kalman Filter" ICEIC(International Conference on Electronics, Information, and Communication) 2017, pp.841-842, January, 11-14(13), 2017, Phuket, Thailand 
 
-* **2015** 
+* **2015**   
   Jeong Ku Kim, Jin Wook Kim, Jin Hyung Kim, Tae Hyung Jung, Young Jun Park, Yun Ho Ko, and Seul Jung, “Experimental Studies of Autonomous Driving of a Vehicle on the Road Using LiDAR and DGPS, 2015 15th International Conference on Control, Automation and Systems (ICCAS 2015), pp. 1366-1369, October 13-16, 2015, Busan, Korea
 
 * **2014**  
@@ -163,7 +163,7 @@ ads: false
 * **2013**  
   Hyun-Soo Kang, Si-Woong Lee, and Yun-Ho Ko, "Context Adaptive Block Scan for Video Coding", 2013 IEEE International Conference on Consumer Electronics (ICCE), pp. 594-595, January 11-14(14), 2013, Las Vegas, USA  
 
-* **2012**
+* **2012**   
   Soo-Yeon Shin, Hyang-Mi Yoo, Yun-Ho Ko, Hyun-Soo Kang, and Jae-Won Suh, “Reversible Watermarking Without Underflow and Overflow Problems”, 2012 IEEE 55th International Midwest Symposium on Circuits and Systems(MWSCAS), pp. 980-983, August 5-8(8), 2012, Boise, Idaho, USA  
 
   Yun-Ho Ko, Hyun-Soo Kang, and Jae-Won Suh, “Fast Motion Estimation Algorithm Combining Search Point Sampling Technique with Adaptive Search Range Algorithm”, 2012 IEEE 55th International Midwest Symposium on Circuits and Systems(MWSCAS), pp. 988-991, August 5-8(8), 2012, Boise, Idaho, USA  
@@ -182,10 +182,10 @@ ads: false
 
   Dong-Yeol Lee, Jin-Hyung Kim, Youn-Ho Jung, Yun-Ho Ko, "Segmentation based BTC image coding for Full HD display driver", Proceddings of the 7th IASTED International Conference SPPRA2010(Signal Processing Pattern Recognition and Applications), pp. 202-206, February, 17 ~ 19, 2010, Innsbruck, Austria  
 
-* **2009** 
+* **2009**   
   Chan-Hee Han, Yeong-Il Jeon, Yun-Ho Ko, Si-Woong Lee, "Side Information Refinement Using Decoded Partial Frequency Bands for TDWZ Codec", KSII International Conference on Internet(ICONI) 2009, pp. 279-284, December 17-21, 2009, NUSA DUA(Bali), Indonesia  
 
-* **2007**
+* **2007**   
   Dong-In Park, Yun-Ho Ko, Ji-Hong Lee, Young-Woo Park, "Modified watershed algorithm considering zero-crossing point of gradient", ICMIT(International Conference on Mechatronics and Information Technology) 2007, pp. 78, December, 6, 2007, Gifu, Japan  
 
 * **2006**  
@@ -202,17 +202,17 @@ ads: false
 
 
 ### Domestic Conference  
-* **2023**
+* **2023**   
   함수린, 장민지, 고윤호, "비전검사를 위한 적층부품의 수량계수 알고리즘", 2023년도 한국멀티미디어학회 추계학술발표대회, 한국멀티미디어학회, 계명대학교, pp.118-122, 2023년 11월 17(17~18)일
 
   최유경, 손상민, 이승연, 이지연, 고윤호, "실시간 영상처리 기반 실내 안내 로봇", 2023년도 제어로봇시스템학회 대전충청지부 학술대회, 제어로봇시스템학회, 라미컨벤션웨딩(대전), pp. A-12, 2023년 12월 21일
 
   한제협, 장민지, 최유경, 최재영, 신나영, 고윤호, 김성수, "딥러닝 기반 탕후루 로봇", 2023년도 제어로봇시스템학회 대전충청지부 학술대회, 제어로봇시스템학회, 라미컨벤션웨딩(대전), pp. A-02, 2023년 12월 21일
 
-* **2022**
+* **2022**   
   함수린, 고윤호, "적층 부품 수량 계수를 위한 HOG 기반 적층 영역 분할 기법", 대한전자공학회 학술심포지움, 대한전자공학회, 충남대학교, pp. 123-124, 2022년 12월 16일
   
-* **2021**
+* **2021**   
   송재열, 고윤호, "크레인 충돌방지를 위한 2축 회전형 라이다 SLAM 기법", 2021년도 대한전자공학회 학술심포지움, 대한전자공학회, 충남대학교, pp. 28-29, 2021년 12월 17일
 
   민경철, 고윤호, "임의 접근 가능한 DSM 코덱을 위한 Quad BTC", 2021년도 대한전자공학회 학술심포지움, 대한전자공학회, 충남대학교, pp. 26-27, 2021년 12월 17일
@@ -221,14 +221,14 @@ ads: false
 
   송재열, 고윤호, “2축 회전형 라이다 데이터 획득 장치를 위한 SLAM 기법”, 2021년도 하계종합학술대회, 대한전자공학회, 롯데호텔 제주(중문), pp. 996-998, 2021년 06월 30일
 
-* **2020**
+* **2020**   
   송재열, 고윤호, "방향타 캐비테이션 발생량 검출 영상처리 시스템", 2020년도 대한전자공학회 학술심포지움, 대한전자공학회, 비대면 화상 학술회의, pp. 85-86, 2020년 12월 16일
 
   민경철, 고윤호, "AM BTC 기법을 적용한 Random Access 가능한 DSM 코덱 구현", 2020년도 대한전자공학회 학술심포지움, 대한전자공학회, 비대면 화상 학술회의, pp. 81-83, 2020년 12월 16일
 
   안재원, 민경철, 송재열, 고윤호, "LiDAR 회전 모듈을 이용한 실내 위치 추정", 2020년도 대한전자공학회 학술심포지움, 대한전자공학회, 비대면 화상 학술회의, pp. 77-78, 2020년 12월 16일
 
-* **2019**
+* **2019**   
   고윤호, 강한솔, 이시웅, “선박 위치의 항공 영상 표시를 위한 좌표 변환 방법”, 2019년도 대한전자공학회 학술심포지움, 대한전자공학회, 대전 한밭대학교, pp. 73-76, 2019년 12월 19일
 
   민경철, 송재열, 윤승상, 고윤호, "시각 장애인을 위한 점자 및 음성 출력장치", 2019년도 한국멀티미디어학회 추계학술발표대회, 한국멀티미디어학회, 중앙대학교 100주년기념관, pp. 699-702, 2019년 11월 15(15~16)일
@@ -241,7 +241,7 @@ ads: false
 
   안재원, 김관호, 고윤호, “부유선별 자동화를 위한 향상된 지역적 영상 밝기 정규화 기반의 거품 경계 검출 기법”, 영상처리 및 이해에 관한 워크샵(IPIU 2019), 한국방송미디어공학회, 제주 메종 글래드, P2-28, 2019년 2월 14(13~15)일
 
-* **2018**
+* **2018**   
   김동환, 김현종, 박규하, 임남형, 고윤호, “레일 주행 로봇을 이용한 레일 온도 측정 시스템”, 한국멀티미디어학회 추계학술발표대회, 한국멀티미디어학회, 한국과학기술정보연구원, pp.813-815, 2018년 11월 17(16~17)일
 
   김근태, 고윤호, “하이브리드 양방향 움직임 추정과 블록분할 OBMC를 통한 프레임율 증가 기법”, 한국멀티미디어학회 추계학술발표대회, 한국멀티미디어학회, 한국과학기술정보연구원, pp.1-3, 2018년 11월 16(16~17)일
@@ -256,7 +256,7 @@ ads: false
 
   전현호, 안재원, 고윤호, “다중 모션 추정을 통한 visual odometry 성능 향상 기법”, 영상처리 및 이해에 관한 워크샵(IPIU 2018), 한국방송미디어공학회, 제주 메종글래드제주호텔, P2-81, 2018년 2월 8(7~9)일
 
-* **2017**
+* **2017**   
   안재원, 김관호, 고윤호, “가우시안 혼합 모델 기반의 거품 색상 분석”, 정보 및 제어 학술대회(CICS 17), 대한전기학회, 대한전자공학회, 목포 신안비치호텔, pp.170-171, 2017년 10월 26(26~28)일
 
   전현호, 고윤호, 임남형, “거리에 따른 IR 카메라의 레일 온도 특성 분석”, 2017 한국철도학회 추계학술대회, 한국철도학회, 웰리힐리파크(강원도 횡성), pp.552-553 , 2017년 10월 19(19~21)일
@@ -273,7 +273,7 @@ ads: false
 
   전현호, 김진형, 김태원, 고윤호, “RAFSet 모션 추정 방법을 이용한 강인한 Visual Odometry”, 영상처리 및 이해에 관한 워크샵(IPIU 2017), 한국멀티미디어학회, 제주 메종글래드제주호텔, pp.198-201, 2017년 2월 16(15~17)일
 
-* **2016**
+* **2016**   
   안재원, 고윤호, "천장 지향 2D-LiDAR를 이용한 실내 주행 로봇의 위치 추정", 대한전자공학회 학술심포지움(2016), 대한전자공학회, 충남대학교, pp.15-16, 2016년 12월 20(19~20)일
 
   안재원, 고윤호, "칼만 필터를 이용한 동영상 해무 제거 기법", 한국멀티미디어학회 추계학술발표대회(2016), 한국멀티미디어학회, 부경대학교 대연캠퍼스, pp.896-897, 2016년 10월 21(21~22)일.
