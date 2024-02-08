@@ -46,23 +46,23 @@ E-mail: koyh@cnu.ac.kr
   Watermarking  
 
 
-
-
 <!-- |     |     |     |
 |-----|-----|-----|
 |<center><img src="../images/professor.png" width="100" height="100"></center> | <center>**Name**</center> | <center>**Ko, Yun-Ho**</center> | -->
 
 ## Ph.D Candidates
+
 |     |     |     |     |
 |-----|-----|-----|-----|
 |<center><img src="../images/안재원.jpg" width="100" height="100"></center> | <center><img src="../images/강한솔.JPG" width="100" height="100"></center> | <center><img src="../images/bio-photo.jpg" width="100" height="100"></center>|<center><img src="../images/김진형.jpg" width="100" height="100"></center> |
 |<center><strong>안재원</strong></center> | <center><strong>강한솔<br>(쎄트렉아이)</strong> </center> | <center><strong>강재웅<br>(ADD)</strong> </center> | <center><strong>김진형<br>(KARI)</strong> </center> |
-| <center><img src="../images/bio-photo.jpg" width="100" height="100"></center> | <center><img src="../images/유용길.jpg" width="100" height="100"></center> |<center><img src="../images/bio-photo.jpg" width="100" height="100"></center>| <center><img src="../images/bio-photo.jpg" width="100" height="100"></center> |
+|<center><img src="../images/bio-photo.jpg" width="100" height="100"></center> | <center><img src="../images/유용길.jpg" width="100" height="100"></center> |<center><img src="../images/bio-photo.jpg" width="100" height="100"></center>| <center><img src="../images/bio-photo.jpg" width="100" height="100"></center> |
 |<center><strong>이민규<br>(ADD)</strong></center> | <center><strong>유용길<br>(BurnYoung)</strong></center> | <center><strong>김미정<br>(ADD)</strong> </center> | <center><strong>이영준<br>(KRISO)</strong> </center> |
 
 
 
 ## M.S Candidates
+
 |     |     |     |     |
 |-----|-----|-----|-----|
 |<center><img src="../images/bio-photo.jpg" width="100" height="100"></center> | <center><img src="../images/bio-photo.jpg" width="100" height="100"></center> |<center><img src="../images/bio-photo.jpg" width="100" height="100"></center> | <center><img src="../images/bio-photo.jpg" width="100" height="100"></center> |
@@ -72,12 +72,14 @@ E-mail: koyh@cnu.ac.kr
 
 
 ## Undergraduates
+
 |     |
 |-----|
 | <center><img src="../images/bio-photo.jpg" width="100" height="100"></center> |
 | <center><strong> 엄강준 </strong></center>|
 
 ## Alumni
+
 |     |     |     |     |
 |-----|-----|-----|-----|
 |<center><img src="../images/bio-photo.jpg" width="100" height="100"></center> | <center><img src="../images/맹형열.jpg" width="100" height="100"></center> | <center><img src="../images/정윤호.jpg" width="100" height="100"></center> | <center><img src="../images/이태영.jpg" width="100" height="100"></center>|
