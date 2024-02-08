@@ -28,7 +28,7 @@ ads: false
 <strong>Prof. Yun-Ho Ko</strong><br>
 Office: 충남대학교 공대 4호관 527호<br>
 Tel: +82-42-821-6860<br>
-E-mail: koy@cnu.ac.kr
+E-mail: koyh@cnu.ac.kr
 
 * **EDUCATION**  
   Ph.D. Department of Electrical Engineering & Computer Science, KAIST, Daejeon, 2002.  
@@ -53,37 +53,31 @@ E-mail: koy@cnu.ac.kr
 |<center><img src="../images/professor.png" width="100" height="100"></center> | <center>**Name**</center> | <center>**Ko, Yun-Ho**</center> | -->
 
 ## Ph.D Candidates
-
 |     |     |     |     |
 |-----|-----|-----|-----|
 |<center><img src="../images/안재원.jpg" width="100" height="100"></center> | <center><img src="../images/강한솔.JPG" width="100" height="100"></center> | <center><img src="../images/bio-photo.jpg" width="100" height="100"></center>|<center><img src="../images/김진형.jpg" width="100" height="100"></center> |
-|<center><strong>안재원</strong></center> | <center><strong>강한솔</strong> </center> | <center><strong>강재웅<br>(ADD)</strong> </center> | <center><strong>김진형<br>(KARI)</strong> </center> |
-| <center><img src="../images/김태원.jpg" width="100" height="100"></center> | <center><img src="../images/유용길.jpg" width="100" height="100"></center> |<center><img src="../images/bio-photo.jpg" width="100" height="100"></center>| <center><img src="../images/bio-photo.jpg" width="100" height="100"></center> |
-|<center><strong>김태원<br>(KAERI)</strong></center> | <center><strong>유용길<br>(BurnYoung)</strong></center> | <center><strong>김미정<br>(ADD)</strong> </center> | <center><strong>이영준</strong> </center> |
-|<center><img src="../images/bio-photo.jpg" width="100" height="100"></center> |  |  | |
-|<center><strong>이민규</strong></center> |  |  |  |
+|<center><strong>안재원</strong></center> | <center><strong>강한솔<br>(쎄트렉아이)</strong> </center> | <center><strong>강재웅<br>(ADD)</strong> </center> | <center><strong>김진형<br>(KARI)</strong> </center> |
+| <center><img src="../images/bio-photo.jpg" width="100" height="100"></center> | <center><img src="../images/유용길.jpg" width="100" height="100"></center> |<center><img src="../images/bio-photo.jpg" width="100" height="100"></center>| <center><img src="../images/bio-photo.jpg" width="100" height="100"></center> |
+|<center><strong>이민규<br>(ADD)</strong></center> | <center><strong>유용길<br>(BurnYoung)</strong></center> | <center><strong>김미정<br>(ADD)</strong> </center> | <center><strong>이영준<br>(KRISO)</strong> </center> |
+
 
 
 ## M.S Candidates
-
 |     |     |     |     |
 |-----|-----|-----|-----|
-|<center><img src="../images/송재열.png" width="100" height="100"></center> | <center><img src="../images/민경철.jpg" width="100" height="100"></center> |<center><img src="../images/bio-photo.jpg" width="100" height="100"></center> | <center><img src="../images/bio-photo.jpg" width="100" height="100"></center> |
-|<center><strong> 송재열 </strong></center> |<center><strong> 민경철 </strong></center> |<center><strong> 정구표<br>(KARI) </strong></center> |<center><strong> 현재복<br>(쎄트렉아이) </strong></center> | 
 |<center><img src="../images/bio-photo.jpg" width="100" height="100"></center> | <center><img src="../images/bio-photo.jpg" width="100" height="100"></center> |<center><img src="../images/bio-photo.jpg" width="100" height="100"></center> | <center><img src="../images/bio-photo.jpg" width="100" height="100"></center> |
-|<center><strong> 이득호 </strong></center> |<center><strong> 이진세 </strong></center> |<center><strong> 함수린 </strong></center> |<center><strong> 장민지 </strong></center> | 
-|<center><img src="../images/bio-photo.jpg" width="100" height="100"></center> |  | |  |
-|<center><strong> 최유경 </strong></center> | | | | 
+|<center><strong> 정구표<br>(KARI) </strong></center> |<center><strong> 현재복<br>(쎄트렉아이) </strong></center> |<center><strong> 이득호<br>(한컴인스페이스) </strong></center> |<center><strong> 이진세<br>(BurnYoung) </strong></center> | 
+|<center><img src="../images/bio-photo.jpg" width="100" height="100"></center> | <center><img src="../images/bio-photo.jpg" width="100" height="100"></center> |<center><img src="../images/bio-photo.jpg" width="100" height="100"></center> |  |
+|<center><strong> 함수린 </strong></center> |<center><strong> 장민지 </strong></center> |<center><strong> 최유경 </strong></center> | |
+
 
 ## Undergraduates
-
 |     |
 |-----|
 | <center><img src="../images/bio-photo.jpg" width="100" height="100"></center> |
 | <center><strong> 엄강준 </strong></center>|
 
 ## Alumni
-
 |     |     |     |     |
 |-----|-----|-----|-----|
 |<center><img src="../images/bio-photo.jpg" width="100" height="100"></center> | <center><img src="../images/맹형열.jpg" width="100" height="100"></center> | <center><img src="../images/정윤호.jpg" width="100" height="100"></center> | <center><img src="../images/이태영.jpg" width="100" height="100"></center>|
@@ -94,5 +88,5 @@ E-mail: koy@cnu.ac.kr
 |<center><strong>이정우<br>(두산중공업)</strong></center> | <center><strong>최성민<br>(KARI)</strong></center> | <center><strong>박태훈<br>(KIST)</strong></center> | <center><strong>박가용<br>(BurnYoung)</strong></center>|
 |<center><img src="../images/한병인.jpg" width="100" height="100"></center> | <center><img src="../images/전현호.jpg" width="100" height="100"></center> | <center><img src="../images/bio-photo.jpg" width="100" height="100"></center>|<center><img src="../images/bio-photo.jpg" width="100" height="100"></center>|
 |<center><strong>한병인<br>(-)</strong></center> | <center><strong>전현호<br>(ADD)</strong></center> | <center><strong>김근태<br>(텔레칩스)</strong></center>|<center><strong>김현종<br>(KAIST)</strong></center> |
-|<center><img src="../images/bio-photo.jpg" width="100" height="100"></center> | | | |
-|<center><strong>박규하<br>(CNU)</strong></center> |  |  | |
+|<center><img src="../images/bio-photo.jpg" width="100" height="100"></center> | <center><img src="../images/김태원.jpg" width="100" height="100"></center> |<center><img src="../images/송재열.png" width="100" height="100"></center> |<center><img src="../images/민경철.jpg" width="100" height="100"></center> |
+|<center><strong>박규하<br>(CNU)</strong></center> | <center><strong>김태원<br>(Rainbow<br>Robotics)</strong></center> | <center><strong> 송재열<br>(Rainbow<br>Robotics) </strong></center> |<center><strong> 민경철<br>(쎄트렉아이) </strong></center> |
