@@ -57,9 +57,9 @@ E-mail: koy@cnu.ac.kr
 |     |     |     |     |
 |-----|-----|-----|-----|
 |<center><img src="../images/안재원.jpg" width="100" height="100"></center> | <center><img src="../images/강한솔.JPG" width="100" height="100"></center> | <center><img src="../images/bio-photo.jpg" width="100" height="100"></center>|<center><img src="../images/김진형.jpg" width="100" height="100"></center> |
-|<center><strong>안재원</strong></center> | <center><strong>강한솔</strong> </center> | <center><strong>강재웅(ADD)</strong> </center> | <center><strong>김진형(KARI)</strong> </center> |
+|<center><strong>안재원</strong></center> | <center><strong>강한솔</strong> </center> | <center><strong>강재웅<br>(ADD)</strong> </center> | <center><strong>김진형<br>(KARI)</strong> </center> |
 | <center><img src="../images/김태원.jpg" width="100" height="100"></center> | <center><img src="../images/유용길.jpg" width="100" height="100"></center> |<center><img src="../images/bio-photo.jpg" width="100" height="100"></center>| <center><img src="../images/bio-photo.jpg" width="100" height="100"></center> |
-|<center><strong>김태원(KAERI)</strong></center> | <center><strong>유용길(Burn Young)</strong></center> | <center><strong>김미정(ADD)</strong> </center> | <center><strong>이영준</strong> </center> |
+|<center><strong>김태원<br>(KAERI)</strong></center> | <center><strong>유용길<br>(BurnYoung)</strong></center> | <center><strong>김미정<br>(ADD)</strong> </center> | <center><strong>이영준</strong> </center> |
 |<center><img src="../images/bio-photo.jpg" width="100" height="100"></center> |  |  | |
 |<center><strong>이민규</strong></center> |  |  |  |
 
@@ -69,7 +69,7 @@ E-mail: koy@cnu.ac.kr
 |     |     |     |     |
 |-----|-----|-----|-----|
 |<center><img src="../images/송재열.png" width="100" height="100"></center> | <center><img src="../images/민경철.jpg" width="100" height="100"></center> |<center><img src="../images/bio-photo.jpg" width="100" height="100"></center> | <center><img src="../images/bio-photo.jpg" width="100" height="100"></center> |
-|<center><strong> 송재열 </strong></center> |<center><strong> 민경철 </strong></center> |<center><strong> 정구표(KARI) </strong></center> |<center><strong> 현재복(쎄트렉아이) </strong></center> | 
+|<center><strong> 송재열 </strong></center> |<center><strong> 민경철 </strong></center> |<center><strong> 정구표<br>(KARI) </strong></center> |<center><strong> 현재복<br>(쎄트렉아이) </strong></center> | 
 |<center><img src="../images/bio-photo.jpg" width="100" height="100"></center> | <center><img src="../images/bio-photo.jpg" width="100" height="100"></center> |<center><img src="../images/bio-photo.jpg" width="100" height="100"></center> | <center><img src="../images/bio-photo.jpg" width="100" height="100"></center> |
 |<center><strong> 이득호 </strong></center> |<center><strong> 이진세 </strong></center> |<center><strong> 함수린 </strong></center> |<center><strong> 장민지 </strong></center> | 
 |<center><img src="../images/bio-photo.jpg" width="100" height="100"></center> |  | |  |
@@ -87,12 +87,12 @@ E-mail: koy@cnu.ac.kr
 |     |     |     |     |
 |-----|-----|-----|-----|
 |<center><img src="../images/bio-photo.jpg" width="100" height="100"></center> | <center><img src="../images/맹형열.jpg" width="100" height="100"></center> | <center><img src="../images/정윤호.jpg" width="100" height="100"></center> | <center><img src="../images/이태영.jpg" width="100" height="100"></center>|
-|<center><strong>성종모(ETRI)</strong></center> | <center><strong>맹형열(LG전자)</strong></center> | <center><strong>정윤호(Silicon Works)</strong></center> | <center><strong>이태영(Coxem)</strong></center>|
+|<center><strong>성종모<br>(ETRI)</strong></center> | <center><strong>맹형열<br>(LG전자)</strong></center> | <center><strong>정윤호<br>(Silicon Works)</strong></center> | <center><strong>이태영<br>(Coxem)</strong></center>|
 |<center><img src="../images/bio-photo.jpg" width="100" height="100"></center> | <center><img src="../images/김진욱.jpg" width="100" height="100"></center> | <center><img src="../images/정유철.jpg" width="100" height="100"></center> | <center><img src="../images/안병민.JPG" width="100" height="100"></center>|
-|<center><strong>김동진(롯데정보통신)</strong></center> | <center><strong>김진욱(한화시스템즈)</strong></center> | <center><strong>정유철(쎄트렉아이)</strong></center> | <center><strong>안병민(Coxem)</strong></center>|
+|<center><strong>김동진<br>(롯데정보통신)</strong></center> | <center><strong>김진욱<br>(한화시스템즈)</strong></center> | <center><strong>정유철<br>(쎄트렉아이)</strong></center> | <center><strong>안병민<br>(Coxem)</strong></center>|
 |<center><img src="../images/bio-photo.jpg" width="100" height="100"></center> | <center><img src="../images/bio-photo.jpg" width="100" height="100"></center> | <center><img src="../images/박태훈.png" width="100" height="100"></center> | <center><img src="../images/박가용.png" width="100" height="100"></center>|
-|<center><strong>이정우(두산중공업)</strong></center> | <center><strong>최성민(KARI)</strong></center> | <center><strong>박태훈(KIST)</strong></center> | <center><strong>박가용(BurnYoung)</strong></center>|
+|<center><strong>이정우<br>(두산중공업)</strong></center> | <center><strong>최성민<br>(KARI)</strong></center> | <center><strong>박태훈<br>(KIST)</strong></center> | <center><strong>박가용<br>(BurnYoung)</strong></center>|
 |<center><img src="../images/한병인.jpg" width="100" height="100"></center> | <center><img src="../images/전현호.jpg" width="100" height="100"></center> | <center><img src="../images/bio-photo.jpg" width="100" height="100"></center>|<center><img src="../images/bio-photo.jpg" width="100" height="100"></center>|
-|<center><strong>한병인(-)</strong></center> | <center><strong>전현호(ADD)</strong></center> | <center><strong>김근태(텔레칩스)</strong></center>|<center><strong>김현종(KAIST)</strong></center> |
+|<center><strong>한병인<br>(-)</strong></center> | <center><strong>전현호<br>(ADD)</strong></center> | <center><strong>김근태<br>(텔레칩스)</strong></center>|<center><strong>김현종<br>(KAIST)</strong></center> |
 |<center><img src="../images/bio-photo.jpg" width="100" height="100"></center> | | | |
-|<center><strong>박규하(CNU)</strong></center> |  |  | |
+|<center><strong>박규하<br>(CNU)</strong></center> |  |  | |
