@@ -3,7 +3,7 @@ title: Seminar
 date: 2019-04-09 12:31:00 Z
 layout: archive
 modified: 2019-04-09 12:31:00 Z
-excerpt: 
+#excerpt: 
 image:
   feature:
   teaser:

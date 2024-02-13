@@ -3,7 +3,7 @@ title: Demo Video
 date: 2019-02-18 18:22:00 Z
 layout: article
 modified: 2019-02-18 18:22:00 Z
-excerpt: 
+#excerpt: 
 image:
   feature:
   teaser:

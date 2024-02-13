@@ -3,7 +3,7 @@ title: Publication
 date: 2018-09-13 12:14:20 Z
 layout: archive
 modified: 2018-09-13 12:14:20 Z
-excerpt: 
+#excerpt: 
 image:
   feature:
   teaser:

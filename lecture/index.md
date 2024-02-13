@@ -3,7 +3,7 @@ title: Lecture
 date: 2018-09-13 15:31:00 Z
 layout: archive
 modified: 2018-09-13 15:31:00 Z
-excerpt: 
+#excerpt: 
 image:
   feature:
   teaser:
