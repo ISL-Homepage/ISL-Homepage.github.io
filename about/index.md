@@ -3,7 +3,7 @@ title:
 date: 2018-09-12 20:46:20 Z
 layout: article
 modified: 2018-09-12 20:46:20 Z
-excerpt: "ISL"
+#excerpt: "ISL"
 image:
   feature:
   teaser:
