@@ -23,12 +23,40 @@ ads: false
         </tr>
     </tbody>
 </table> -->
-<img alt="고윤호 교수님 사진입니다." src="../images/professor.png"/>
-<br>
+
+<div style="width:100%;">
+  <div style="display:inline-block;vertical-align:top;width:30%;">
+      <center><img src="../images/professor.png" width="150" alt="고윤호 교수님 사진입니다."/></center>
+  </div>
+  <div style="display:inline-block;width:65%;vertical-align:middle;">
+      <p style="font-size: x-large">
+      <strong>Prof. Yun-Ho Ko</strong><br>
+      </p>
+      <p>
+        Office: 충남대학교 공대 4호관 527호<br>
+        Tel: +82-42-821-6860<br>
+        E-mail: koyh@cnu.ac.kr<br>
+      </p>
+  </div>
+</div>
+
+<!-- <div>
+    <div style="float: left">
+        <img src="../images/professor.png" />
+    </div>
+    <div>
+        <strong>Prof. Yun-Ho Ko</strong><br>
+        Office: 충남대학교 공대 4호관 527호<br>
+        Tel: +82-42-821-6860<br>
+        E-mail: koyh@cnu.ac.kr<br>
+    </div>
+</div> -->
+
+<!-- <img alt="고윤호 교수님 사진입니다." src="../images/professor.png"/>
 <strong>Prof. Yun-Ho Ko</strong><br>
 Office: 충남대학교 공대 4호관 527호<br>
 Tel: +82-42-821-6860<br>
-E-mail: koyh@cnu.ac.kr
+E-mail: koyh@cnu.ac.kr -->
 
 * **EDUCATION**  
   Ph.D. Department of Electrical Engineering & Computer Science, KAIST, Daejeon, 2002.  
@@ -44,8 +72,8 @@ E-mail: koyh@cnu.ac.kr
   Pattern recognition  
   Augmented Reality  
   Watermarking  
-
-
+  
+---
 
 
 <!-- |     |     |     |
@@ -61,7 +89,6 @@ E-mail: koyh@cnu.ac.kr
 |<center><img src="../images/bio-photo.jpg" width="100" height="100"></center> | <center><img src="../images/유용길.jpg" width="100" height="100"></center> |<center><img src="../images/bio-photo.jpg" width="100" height="100"></center>| <center><img src="../images/이영준.jpg" width="100" height="100"></center> |
 |<center><strong>이민규<br>(국방과학연구소)</strong></center> | <center><strong>유용길<br>((주)번영)</strong></center> | <center><strong>김미정<br>(국방과학연구소)</strong> </center> | <center><strong>이영준<br>(선박해양플랜트연구소)</strong> </center> |
 
-
 ## M.S Candidates
 
 |     |     |     |     |
@@ -70,7 +97,6 @@ E-mail: koyh@cnu.ac.kr
 |<center><strong> 정구표<br>(한국항공우주연구원) </strong></center> |<center><strong> 현재복<br>(쎄트렉아이) </strong></center> |<center><strong> 이득호<br>(한컴인스페이스) </strong></center> |<center><strong> 이진세<br>((주)번영) </strong></center> | 
 |<center><img src="../images/bio-photo.jpg" width="100" height="100"></center> | <center><img src="../images/bio-photo.jpg" width="100" height="100"></center> |<center><img src="../images/bio-photo.jpg" width="100" height="100"></center> |  |
 |<center><strong> 함수린 </strong></center> |<center><strong> 장민지 </strong></center> |<center><strong> 최유경 </strong></center> | |
-
 
 ## Undergraduates
 

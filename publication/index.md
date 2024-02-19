@@ -19,8 +19,8 @@ ads: false
 {% endfor %}
 </div>/.tiles -->
 
-## Journal 
-### International Journal
+## *Journal*
+### *International Journal*
 * **2022**  
   Bu-Geun Paik, Jong-Woo Ahn, Hongseok Jeong, Hanshin Seol, Jae-Yeol Song, Yun-Ho Ko, “Experimental study on the frequency characteristics of cloud cavitation on a full-spade rudder of a ship”, Ocean Engineering, Vol. 253, pp. 1-12, June 2022.
 
@@ -57,7 +57,9 @@ ads: false
 * **2005**  
   Si-Woong Lee, Sung-Hoon Hong, Jae Gark Choi, Yun-Ho Ko and Byoung-Ju Yun, "Video rate control using an adaptive quantization based on a combined activity measure", Lecture Notes in Artificial Intelligence, vol.3681, pp1297-1302, Sep. 2005.  
   
-  Jae-Soo Cho , Byoung-Ju Yun and Yun-Ho Ko, "Precision Tracking Based-on Fuzzy Reasoning Segmentation in Cluttered Image Sequences", Lecture Notes in Artificial Intelligence, vol.3682, pp371-377, Sep. 2005.  
+  Jae-Soo Cho , Byoung-Ju Yun and Yun-Ho Ko, "Precision Tracking Based-on Fuzzy Reasoning Segmentation in Cluttered Image Sequences", Lecture Notes in Artificial Intelligence, vol.3682, pp371-377, Sep. 2005. 
+
+--- 
 
 ### Domestic Journal
 * **2023**   
@@ -138,6 +140,8 @@ ads: false
   
   최재각, 고윤호, 고창림, “결합 공간기울기 및 변화검출을 이용한 비디오 객체 분할 방법”, 한국화상학회지, Vol. 12, No. 1, pp. 27-36, 2006. 3  
 
+---
+
 ## Conference  
 ### International Conference
 * **2020**   
@@ -200,6 +204,7 @@ ads: false
   
   Byoung-Ju Yun, Jae-Soo Cho, and Yun-Ho Ko "An efficient polygonal approximation method in the rate-distortion sense", International Conference on Intelligent Computing, pp. 336-343, August 23-26, 2005, HeFei, China  
 
+---
 
 ### Domestic Conference  
 * **2023**   
@@ -392,3 +397,5 @@ ads: false
   박정홍, 박동인, 조승기, 고윤호, 이지홍, 박영우, "레이져 스캐닝 시스템을 이용한 가공물의 높이 측정 및 3차원 형상 복원", 제어자동화시스템심포지엄(CASS 2006), pp. 430-435, 학군국제전시장(KINTEX) 경기도, 2006. 6. 1 ~ 3  
   
   오상진, 이지홍, 고윤호, " 맵핑 테이블을 이용한 전역 밝기 보상", 정보 및 제어 심포지움(ISC 2006), pp. 15-17, 서울시립대학교 자연과학관,  2006.  4. 29  
+
+---
