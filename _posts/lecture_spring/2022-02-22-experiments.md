@@ -17,13 +17,13 @@ ads: false
 {% include toc.html %}
 
 <!--예시-->
-## 2023 전자회로 실험
+## 2024 전자회로 실험
 
 
 ## 강의 계획서
 * **강의 계획서** 
-: 2023 전자회로실험 syllabus.
-[다운로드](../../attachments/전자회로 실험_2023_syllabus.pdf)
+: 2024 전자회로실험 syllabus.
+[다운로드](../../attachments/전자회로 실험_2024_syllabus.pdf)
 
 ## OrCAD 설치 및 사용법
 * **OrCAD 설치 및 사용법** 
@@ -39,7 +39,7 @@ ads: false
 
 ## 실험 공지
 * **보고서 양식**
-: 실험 보고서 양식.[다운로드](../../attachments/2023_notice/보고서 양식.hwp)
+: 실험 보고서 양식.[다운로드](../../attachments/2024_notice/보고서 양식.hwp)
 
 <!-- * **2주차 실험 공지**
 : 2주차 실험 공지.[다운로드](../../attachments/2023_notice/2주차 실험 공지.pdf)
