@@ -17,13 +17,12 @@ ads: false
 {% include toc.html %}
 
 <!--예시-->
-## 2025 전자회로 실험
-
+## 2026 전자회로 실험
 
 ## 강의 계획서
 * **강의 계획서** 
 : 2025 전자회로실험 syllabus.
-[다운로드](../../attachments/전자회로실험_2025_syllabus.pdf)
+[다운로드](../../attachments/전자회로실험_2026_syllabus.pdf)
 
 ## OrCAD 설치 및 사용법
 * **OrCAD 설치 및 사용법** 
