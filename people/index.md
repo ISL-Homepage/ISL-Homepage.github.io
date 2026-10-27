@@ -87,8 +87,9 @@ aside: false
   font-weight: 500;
 }
 .prof-role {
-  color: var(--vp-c-brand-1);
-  font-weight: 500;
+  margin-top: 2px;
+  color: var(--vp-c-text-2);
+  font-size: 15px;
 }
 .vp-doc .prof-contact {
   margin: 14px 0 0;

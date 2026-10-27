@@ -3,8 +3,6 @@ import { withBase } from 'vitepress'
 import { data as groups } from '../../../data/people.data'
 
 const photoUrl = (photo: string) => withBase(encodeURI(`/images/people/${photo}`))
-// 사진이 없으면 이름 뒤 두 글자로 아바타를 만든다 (예: 정해밀 -> 해밀)
-const initials = (name: string) => (/^[가-힣]{3,}$/.test(name) ? name.slice(1) : name.slice(0, 2))
 </script>
 
 <template>
@@ -17,7 +15,13 @@ const initials = (name: string) => (/^[가-힣]{3,}$/.test(name) ? name.slice(1)
     <div class="people-grid">
       <div v-for="p in g.members" :key="p.name" class="person">
         <img v-if="p.photo" :src="photoUrl(p.photo)" :alt="p.name" loading="lazy" />
-        <span v-else class="avatar" aria-hidden="true">{{ initials(p.name) }}</span>
+        <!-- 사진이 없으면 기본 프로필 아바타 -->
+        <span v-else class="avatar" aria-hidden="true">
+          <svg viewBox="0 0 64 64">
+            <circle cx="32" cy="25" r="12" />
+            <path d="M10 58c2-12 11-19 22-19s20 7 22 19z" />
+          </svg>
+        </span>
         <strong>{{ p.name }}</strong>
         <span v-if="p.affiliation" class="affiliation">{{ p.affiliation }}</span>
       </div>
@@ -73,13 +77,17 @@ const initials = (name: string) => (/^[가-힣]{3,}$/.test(name) ? name.slice(1)
 }
 .avatar {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
-  background: linear-gradient(135deg, var(--vp-c-brand-soft), rgba(240, 163, 94, 0.18));
-  color: var(--vp-c-brand-1);
-  font-size: 22px;
-  font-weight: 700;
-  letter-spacing: 0.02em;
+  overflow: hidden;
+  background: var(--vp-c-default-soft);
+  box-shadow: 0 0 0 3px var(--vp-c-bg), 0 0 0 4px var(--vp-c-divider);
+}
+.avatar svg {
+  width: 78%;
+  height: 78%;
+  fill: var(--vp-c-text-3);
+  opacity: 0.55;
 }
 .person strong {
   font-size: 15px;

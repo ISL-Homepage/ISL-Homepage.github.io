@@ -1,5 +1,8 @@
 /* ISL 로고 색(빨강) 기준 브랜드 색 */
 :root {
+  /* 글꼴: Pretendard (config.mts head에서 CDN으로 불러옴) */
+  --vp-font-family-base: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui,
+    'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
   --vp-c-brand-1: #b3141b;
   --vp-c-brand-2: #c9252c;
   --vp-c-brand-3: #d93a40;

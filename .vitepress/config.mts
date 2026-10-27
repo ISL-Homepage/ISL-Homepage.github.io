@@ -30,7 +30,18 @@ export default defineConfig({
   srcExclude: ['README.md', 'docs/**', 'tools/**'],
   // .hwp 등 첨부파일을 페이지 링크로 오인하므로 첨부 경로는 검사에서 제외
   ignoreDeadLinks: [/^\/attachments\//],
-  head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
+  head: [
+    ['link', { rel: 'icon', href: '/favicon.ico' }],
+    // Pretendard 글꼴 (jsDelivr CDN, 페이지에 쓰인 글자만 내려받는 dynamic subset)
+    ['link', { rel: 'preconnect', href: 'https://cdn.jsdelivr.net', crossorigin: '' }],
+    [
+      'link',
+      {
+        rel: 'stylesheet',
+        href: 'https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css'
+      }
+    ]
+  ],
 
   transformPageData(pageData) {
     const deps = dataDeps[pageData.relativePath]
