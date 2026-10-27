@@ -1,0 +1,52 @@
+# People 페이지 데이터. 사람 추가/이동은 여기서 한 줄만 고치면 됩니다.
+# - photo: public/images/ 안의 파일명. 비워 두면 기본 사진(bio-photo.jpg)
+# - affiliation: 현재 소속 (졸업생 등)
+# 교수님 정보는 people/index.md 본문에 있습니다.
+
+- group: Ph.D Candidates
+  members:
+    - { name: 안재원, photo: 안재원.jpg }
+    - { name: 강한솔, affiliation: 쎄트렉아이, photo: 강한솔.jpg }
+    - { name: 강재웅, affiliation: 국방과학연구소 }
+    - { name: 김진형, affiliation: 한국항공우주연구원, photo: 김진형.jpg }
+    - { name: 이민규, affiliation: 국방과학연구소 }
+    - { name: 유용길, affiliation: (주)번영, photo: 유용길.jpg }
+    - { name: 김미정, affiliation: 국방과학연구소 }
+    - { name: 이영준, affiliation: 선박해양플랜트연구소, photo: 이영준.jpg }
+
+- group: M.S Candidates
+  members:
+    - { name: 정구표, affiliation: 한국항공우주연구원 }
+    - { name: 현재복, affiliation: 쎄트렉아이 }
+    - { name: 이득호, affiliation: 한컴인스페이스 }
+    - { name: 이진세, affiliation: (주)번영 }
+    - { name: 함수린 }
+    - { name: 장민지 }
+    - { name: 최유경 }
+
+- group: Undergraduates
+  members:
+    - { name: 엄강준 }
+
+- group: Alumni
+  members:
+    - { name: 성종모, affiliation: 한국전자통신연구원 }
+    - { name: 맹형열, affiliation: LG전자, photo: 맹형열.jpg }
+    - { name: 정윤호, affiliation: Silicon Works, photo: 정윤호.jpg }
+    - { name: 이태영, affiliation: Coxem, photo: 이태영.jpg }
+    - { name: 김동진, affiliation: 롯데정보통신 }
+    - { name: 김진욱, affiliation: 한화시스템즈, photo: 김진욱.jpg }
+    - { name: 정유철, affiliation: 쎄트렉아이, photo: 정유철.jpg }
+    - { name: 안병민, affiliation: Coxem, photo: 안병민.jpg }
+    - { name: 이정우, affiliation: 두산중공업 }
+    - { name: 최성민, affiliation: 한국항공우주연구원 }
+    - { name: 박태훈, affiliation: 한국과학기술연구원, photo: 박태훈.png }
+    - { name: 박가용, affiliation: (주)번영, photo: 박가용.png }
+    - { name: 한병인, photo: 한병인.jpg }
+    - { name: 전현호, affiliation: 국방과학연구소, photo: 전현호.jpg }
+    - { name: 김근태, affiliation: 텔레칩스 }
+    - { name: 김현종, affiliation: KAIST }
+    - { name: 박규하, affiliation: CNU }
+    - { name: 김태원, affiliation: 레인보우로보틱스, photo: 김태원.jpg }
+    - { name: 송재열, affiliation: 레인보우로보틱스, photo: 송재열.png }
+    - { name: 민경철, affiliation: 쎄트렉아이, photo: 민경철.jpg }
