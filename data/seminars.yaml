@@ -1,0 +1,544 @@
+# 세미나 목록. 새 세미나는 PDF를 public/attachments/seminar/<연도>/ 에 넣고
+# 아래 형식으로 항목 하나를 추가하면 됩니다. 순서는 상관없습니다(날짜순 자동 정렬).
+#
+# - date: 2026-03-01
+#   title: "발표 제목"
+#   speaker: "발표자"
+#   desc: "한 줄 설명 (선택)"
+#   file: "2026/20260301_발표자_제목.pdf"
+
+- date: 2019-12-20
+  title: "Pytorch"
+  speaker: "안재원"
+  desc: "Pytorch를 이용한 custom data-set 학습 튜토리얼."
+  file: "2019/20191220_AJW_PytorchQuickStart.pdf"
+- date: 2019-11-01
+  title: "거품 분할"
+  speaker: "안재원"
+  desc: "경계정보 확장 기반의 거품 분할 기법."
+  file: "2019/20191101_AJW_경계 분포 경향성을 기반으로 하는 거품 분할 기법.pdf"
+- date: 2019-09-05
+  title: "ResNeXt 논문 리뷰"
+  speaker: "안재원"
+  desc: "Aggregated residual transformations for deep neural networks 논문리뷰."
+  file: "2019/20190905_AJW_AggregatedResidualTransformationsforDeepNeuralNetworks.pdf"
+- date: 2019-08-01
+  title: "GMMs를 이용한 색상분석"
+  speaker: "안재원"
+  desc: "Gaussian Mixture Models기반의 색상분석."
+  file: "2019/20190801_AJW_GmmsInPolarCoordinate.pdf"
+- date: 2019-06-28
+  title: "전자현미경 영상 스티칭"
+  speaker: "안재원"
+  desc: "전자현미경 영상 스티칭 경과 보고."
+  file: "2019/20190627_AJW_stitching3.pdf"
+- date: 2019-04-18
+  title: "SRCNN"
+  speaker: "안재원"
+  desc: "Image Super-Resolution Using Deep Convolutional Networks 논문 리뷰."
+  file: "2019/20190418_AJW_SRCNN.pdf"
+- date: 2019-04-11
+  title: "점자 영상 출력 장치"
+  speaker: "송재열"
+  desc: "캡스톤 디자인 진도 보고 I (전처리 과정)."
+  file: "2019/20190411_송재열_캡스톤_점자출력장치.pdf"
+- date: 2019-03-29
+  title: "LSGAN"
+  speaker: "강한솔"
+  desc: "LSGAN 개념 소개 및 PyTorch 기반의 구현."
+  file: "2019/20190329_강한솔_LSGAN.pdf"
+- date: 2019-01-28
+  title: "얼음 파괴 모드 가시화"
+  speaker: "강한솔"
+  desc: "얼음 파괴 모드 기시화(크랙 가시화 및 세그멘테이션)."
+  file: "2019/20190128_강한솔_얼음 파괴모드 가시화 기반 기술 개발.pdf"
+- date: 2018-12-24
+  title: "InfoGAN"
+  speaker: "강한솔"
+  desc: "InfoGAN 개념 소개 및 PyTorch 기반의 구현."
+  file: "2018/20181224_강한솔_InfoGAN.pdf"
+- date: 2018-12-03
+  title: "ResNet"
+  speaker: "안재원"
+  desc: "Deep Residual Learning for Image Recognition 논문 리뷰."
+  file: "2018/20181203_AJW_DeepResidualLearningForImageRecognition.pdf"
+- date: 2018-11-12
+  title: "Coding Convention"
+  speaker: "강한솔"
+  desc: "기본적인 Coding Convention(Google 기반)."
+  file: "2018/20181112_강한솔_Coding Convention.pdf"
+- date: 2018-10-08
+  title: "PyTorch"
+  speaker: "강한솔"
+  desc: "PyTorch 소개 및 사용법."
+  file: "2018/20181008_강한솔_PyTorch.pdf"
+- date: 2018-08-30
+  title: "DCGAN"
+  speaker: "강한솔"
+  desc: "DCGAN 개념 소개 및 PyTorch 기반의 구현."
+  file: "2018/20180830_강한솔_DCGAN.pdf"
+- date: 2018-08-20
+  title: "Tips"
+  speaker: "강한솔"
+  desc: "문서 및 개발 관련 팁 정리."
+  file: "2018/20180820_강한솔_Tips.pdf"
+- date: 2018-08-13
+  title: "Co Occurrence Matrix"
+  speaker: "안재원"
+  desc: "Co Occurrence Matrix 소개 및 응용."
+  file: "2018/20180813_AJW_CoOccurrenceMatrix.pdf"
+- date: 2018-07-17
+  title: "GAN"
+  speaker: "강한솔"
+  desc: "Original GAN 개념 소개 및 PyTorch 기반의 구현."
+  file: "2018/20180717_강한솔_GAN.pdf"
+- date: 2018-07-02
+  title: "A-EnLN"
+  speaker: "안재원"
+  desc: "A-EnLN 소개 및 응용."
+  file: "2018/20180702_AJW_A-EnLN.pdf"
+- date: 2018-06-04
+  title: "Froth Segmentation"
+  speaker: "안재원"
+  desc: "Froth Segmentation 소개 및 응용."
+  file: "2018/20180604_AJW_Froth_Segmentation.pdf"
+- date: 2018-04-30
+  title: "Bubble Edge detection"
+  speaker: "안재원"
+  desc: "거품 경계 검출 과제 세미나."
+  file: "2018/20180430_AJW_Bubble_Edge_detection.pdf"
+- date: 2018-03-26
+  title: "Line Detection"
+  speaker: "안재원"
+  desc: "라인 검출 방법 소개."
+  file: "2018/20180326_AJW_line_detection.pdf"
+- date: 2018-01-18
+  title: "CAM"
+  speaker: "안재원"
+  desc: "CAM(Class Activation Mapping) 소개."
+  file: "2018/20180118_AJW_CAM.pdf"
+- date: 2018-01-11
+  title: "Object detection"
+  speaker: "전현호"
+  desc: "딥러닝 기반의 object detection 소개."
+  file: "2018/20180111_전현호_Object detection.pdf"
+- date: 2018-01-02
+  title: "object detection"
+  speaker: "전현호"
+  file: "2017/-Unlicensed-20180102_전현호_object detection.pdf"
+- date: 2017-12-21
+  title: "BubbleBubble2"
+  speaker: "안재원"
+  file: "2017/-Unlicensed-20171221_AJW_BubbleBubble2.pdf"
+- date: 2017-11-30
+  title: "BubbleBubble"
+  speaker: "안재원"
+  file: "2017/-Unlicensed-20171130_AJW_BubbleBubble.pdf"
+- date: 2017-10-25
+  title: "GTA AI"
+  speaker: "전현호"
+  file: "2017/-Unlicensed-20171025_전현호_GTA_AI.pdf"
+- date: 2017-09-21
+  title: "Percolation"
+  speaker: "안재원"
+  file: "2017/-Unlicensed-20170921_AJW_Percolation.pdf"
+- date: 2017-09-21
+  title: "Froth Segmentation based on Edge"
+  speaker: "안재원"
+  file: "2017/-Unlicensed-20170921_AJW_Froth Segmentation based on Edge.pdf"
+- date: 2017-07-24
+  title: "Froth Flotation"
+  speaker: "안재원"
+  file: "2017/-Unlicensed-20170724_AJW_Froth Flotation.pdf"
+- date: 2017-07-13
+  title: "RAFSLAM-part1"
+  speaker: "전현호"
+  file: "2017/-Unlicensed-20170713_전현호_RAFSLAM-part1.pdf"
+- date: 2017-06-26
+  title: "MSRMS"
+  speaker: "강한솔"
+  file: "2017/20170626_강한솔_MSRMS.pdf"
+- date: 2017-06-05
+  title: "Segmentation"
+  speaker: "안재원"
+  file: "2017/-Unlicensed-20170605_AJW_segmentation.pdf"
+- date: 2017-05-22
+  title: "정밀 깊이맵을 위한 백색 보조 띠 기반의 스테레오 정합 기법(학위)"
+  speaker: "강한솔"
+  file: "2017/20170522_학위논문_강한솔.pdf"
+- date: 2017-05-13
+  title: "Deep learning 3"
+  speaker: "전현호"
+  file: "2017/-Unlicensed-20170513_전현호_deep learning3.pdf"
+- date: 2017-05-08
+  title: "Basic of DCNN"
+  speaker: "강한솔"
+  file: "2017/20170508_강한솔_Basic of DCNN.pdf"
+- date: 2017-04-17
+  title: "ROS tutorial"
+  speaker: "안재원"
+  file: "2017/-Unlicensed-20170417_AJW_rostutorial.pdf"
+- date: 2017-04-12
+  title: "RAFSet motion estimation"
+  speaker: "전현호"
+  file: "2017/-Unlicensed-20170412_전현호_11.RAFSet motion estimation.pdf"
+- date: 2017-03-27
+  title: "Basic of DL"
+  speaker: "강한솔"
+  file: "2017/-Unlicensed-20170327_강한솔_Basic of DL.pdf"
+- date: 2017-03-27
+  title: "Basic of DL"
+  speaker: "강한솔"
+  file: "2017/20170327_강한솔_Basic of DL.pdf"
+- date: 2017-03-20
+  title: "TX1 tutorial"
+  speaker: "안재원"
+  file: "2017/-Unlicensed-20170320_AJW_TX1tutorial.pdf"
+- date: 2017-03-06
+  title: "Tensorflow"
+  speaker: "전현호"
+  file: "2017/-Unlicensed-20170306_전현호_tensorflow.pdf"
+- date: 2017-02-13
+  title: "Velodyne SLAM."
+  speaker: "김태원"
+  file: "2017/-Unlicensed-20170213_김태원_Velodyne SLAM.pdf"
+- date: 2017-02-06
+  title: "Basic of ML"
+  speaker: "강한솔"
+  file: "2017/20170206_강한솔_Basic of ML.pdf"
+- date: 2017-01-23
+  title: "Motion magnification"
+  speaker: "안재원"
+  file: "2017/-Unlicensed-20170123_AJW_Motion magnification.pdf"
+- date: 2017-01-09
+  title: "LiDAR_interpolation"
+  speaker: "전현호"
+  file: "2017/-Unlicensed-20170109_전현호_LiDAR_interpolation.pdf"
+- date: 2017-01-02
+  title: "SupportVectorMachine"
+  speaker: "강한솔"
+  file: "2017/-Unlicensed-20170102_강한솔_SupportVectorMachine.pdf"
+- date: 2016-12-19
+  title: "BoW"
+  speaker: "전현호"
+  file: "2016/-Unlicensed-20161219_전현호_bow.pdf"
+- date: 2016-12-12
+  title: "Numerical Optimization"
+  speaker: "김태원"
+  file: "2016/-Unlicensed-20161212_김태원_Numerical Optimization(16_12_12).pdf"
+- date: 2016-11-28
+  title: "QT Programming"
+  speaker: "강한솔"
+  file: "2016/-Unlicensed-20161128_강한솔_QT Programming.pdf"
+- date: 2016-10-24
+  title: "Active stereo vision system for object position estimation"
+  speaker: "강한솔"
+  file: "2016/-Unlicensed-20161024_강한솔_Active stereo vision system for object position estimation.pdf"
+- date: 2016-10-17
+  title: "VO-RAF"
+  speaker: "전현호"
+  file: "2016/-Unlicensed-20161017_전현호_VO-RAF.pdf"
+- date: 2016-09-26
+  title: "Active stereo vision system for object position estimation2"
+  speaker: "강한솔"
+  file: "2016/-Unlicensed-20160926_강한솔_Active stereo vision system for object position estimation2.pdf"
+- date: 2016-09-19
+  title: "FindLocation2"
+  speaker: "안재원"
+  file: "2016/-Unlicensed-20160919_AJW_FindLocation2.pdf"
+- date: 2016-09-13
+  title: "GoogLeNet"
+  speaker: "전현호"
+  file: "2016/-Unlicensed-20160913_전현호_GoogLeNet.pdf"
+- date: 2016-08-29
+  title: "Active stereo vision system for object position estimation"
+  speaker: "강한솔"
+  file: "2016/-Unlicensed-20160829_강한솔_Active stereo vision system for object position estimation.pdf"
+- date: 2016-08-22
+  title: "원자력연구원진행상황"
+  speaker: "강한솔"
+  file: "2016/-Unlicensed-20160822_강한솔_원자력연구원진행상황.pdf"
+- date: 2016-08-19
+  title: "ExtractCeiling"
+  speaker: "안재원"
+  file: "2016/-Unlicensed-20160819_AJW_ExtractCeiling.pdf"
+- date: 2016-08-08
+  title: "Geometry"
+  speaker: "전현호"
+  file: "2016/-Unlicensed-20160808_전현호_Geometry.pdf"
+- date: 2016-07-18
+  title: "KAZE"
+  speaker: "안재원"
+  file: "2016/-Unlicensed-20160718_AJW_KAZE.pdf"
+- date: 2016-06-08
+  title: "Artificial Neural Network"
+  speaker: "전현호"
+  file: "2016/-Unlicensed-20160608_전현호_Artificial Neural Network.pdf"
+- date: 2016-06-01
+  title: "Stereo Matching Using Belief Propagation Algorithm"
+  speaker: "강한솔"
+  file: "2016/-Unlicensed-20160601_강한솔_ Stereo Matching Using Belief Propagation Algorithm.pdf"
+- date: 2016-05-04
+  title: "UBUNTU"
+  speaker: "안재원"
+  file: "2016/-Unlicensed-20160504_AJW_UBUNTU.pdf"
+- date: 2016-04-08
+  title: "RAF"
+  speaker: "전현호"
+  file: "2016/-Unlicensed-20160408_전현호_RAF.pdf"
+- date: 2016-04-01
+  title: "Stereo Matching Using BP"
+  speaker: "강한솔"
+  file: "2016/-Unlicensed-20160401_강한솔_Stereo Matching Using BPpptx.pdf"
+- date: 2016-03-04
+  title: "Particle Filter"
+  speaker: "전현호"
+  file: "2016/-Unlicensed-20160304_전현호_Particle Filter.pdf"
+- date: 2016-02-25
+  title: "SIFT"
+  speaker: "강한솔"
+  file: "2016/-Unlicensed-20160225_강한솔_SIFT.pdf"
+- date: 2016-02-03
+  title: "TCP/IP"
+  speaker: "안재원"
+  file: "2016/-Unlicensed-20160203_AJW_tcp_ip.pdf"
+- date: 2016-02-03
+  title: "MATTING"
+  speaker: "안재원"
+  file: "2016/-Unlicensed-20160203_AJW_MATTING.pdf"
+- date: 2016-01-11
+  title: "Exact Stereo Calibration"
+  speaker: "유용길"
+  file: "2015/-Unlicensed-20160111_유용길_Exact Stereo Calibration.pdf"
+- date: 2016-01-02
+  title: "SupportVectorMachine"
+  speaker: "-"
+  file: "2016/-Unlicensed-20160102__SupportVectorMachine.pdf"
+- date: 2015-12-17
+  title: "Robust Digital Image Stabilization Using the Kalman Filter"
+  speaker: "강한솔"
+  file: "2015/-Unlicensed-20151217_강한솔_Robust Digital Image Stabilization Using the Kalman Filter .pdf"
+- date: 2015-12-02
+  title: "RainRemoval"
+  speaker: "안재원"
+  file: "2015/-Unlicensed-20151202_AJW_RainRemoval.pdf"
+- date: 2015-11-04
+  title: "Retinex Algorithm"
+  speaker: "강한솔"
+  file: "2015/-Unlicensed-20151104_강한솔_Retinex Algorithm.pdf"
+- date: 2015-10-14
+  title: "DeHaze"
+  speaker: "안재원"
+  file: "2015/-Unlicensed-20151014_안재원_DeHaze.pdf"
+- date: 2015-09-23
+  title: "다중매질의 렌즈 모델"
+  speaker: "유용길"
+  file: "2015/-Unlicensed-20150923_유용길_다중매질의 렌즈 모델.pdf"
+- date: 2015-09-09
+  title: "Parallel Programming Using CUDA"
+  speaker: "강한솔"
+  file: "2015/-Unlicensed-20150909_강한솔_Parallel Programming Using CUDA.pdf"
+- date: 2015-08-31
+  title: "OpenMP"
+  speaker: "안재원"
+  file: "2015/-Unlicensed-20150831_안재원_OpenMP.pdf"
+- date: 2015-07-27
+  title: "Image enhancement based on selective-retinex fusion algorithm"
+  speaker: "강한솔"
+  file: "2015/-Unlicensed-20150727_강한솔_Image enhancement based on selective-retinex fusion algorithm.pdf"
+- date: 2015-07-20
+  title: "Delaunay Triangulation"
+  speaker: "안재원"
+  file: "2015/-Unlicensed-20150720_안재원_Delaunay_Triangulation.pdf"
+- date: 2015-07-03
+  title: "카메라 초점거리 변화"
+  speaker: "유용길"
+  file: "2015/-Unlicensed-20150703_유용길_카메라 초점거리 변화.pdf"
+- date: 2015-06-19
+  title: "Basis of Camera Calibration Pt0"
+  speaker: "강한솔"
+  file: "2015/-Unlicensed-20150619_강한솔_Basis of Camera Calibration Pt0.pdf"
+- date: 2015-06-12
+  title: "Mesh Modeling"
+  speaker: "안재원"
+  file: "2015/-Unlicensed-20150612_안재원_Mesh_Modeling.pdf"
+- date: 2015-05-22
+  title: "다중매질의 광특성과 카메라"
+  speaker: "유용길"
+  file: "2015/-Unlicensed-20150522_유용길_다중매질의 광특성과 카메라.pdf"
+- date: 2015-05-15
+  title: "Robust Aged Feature set"
+  speaker: "김진형"
+  file: "2015/-Unlicensed-20150515_김진형_Robust Aged Feature set.pdf"
+- date: 2015-05-08
+  title: "Basis of Camera Calibration Pt1"
+  speaker: "강한솔"
+  file: "2015/-Unlicensed-20150508_강한솔_Basis of Camera Calibration Pt1.pdf"
+- date: 2015-04-24
+  title: "세미나 발표"
+  speaker: "안병민"
+  file: "2015/-Unlicensed-20150424_안병민.pdf"
+- date: 2015-04-24
+  title: "VTK&OpenCV"
+  speaker: "안재원"
+  file: "2015/-Unlicensed-20150424_안재원_VTK&OpenCV.pdf"
+- date: 2015-04-02
+  title: "Strereo Triangulation구현"
+  speaker: "유용길"
+  file: "2015/-Unlicensed-20150402_유용길_Strereo Triangulation구현.pdf"
+- date: 2015-03-20
+  title: "Features from Accelerated Segment Test"
+  speaker: "김진형"
+  file: "2015/-Unlicensed-20150320_김진형_Features from Accelerated Segment Test.pdf"
+- date: 2015-03-03
+  title: "Excel Automation Tutorial"
+  speaker: "강한솔"
+  file: "2015/-Unlicensed-20150303_강한솔_Excel Automation Tutorial.pdf"
+- date: 2015-02-23
+  title: "OpenCV"
+  speaker: "안재원"
+  file: "2015/-Unlicensed-20150223_안재원_OpenCV.pdf"
+- date: 2015-02-09
+  title: "Strereo Triangulation"
+  speaker: "유용길"
+  file: "2015/-Unlicensed-20150209_유용길_Strereo Triangulation.pdf"
+- date: 2015-02-04
+  title: "PointCloudLibrary"
+  speaker: "김진형"
+  file: "2015/-Unlicensed-20150204_김진형_PointCloudLibrary.pdf"
+- date: 2015-01-26
+  title: "과제진행"
+  speaker: "안재원"
+  file: "2015/-Unlicensed-20150126_안재원_과제진행.pdf"
+- date: 2015-01-19
+  title: "PA program"
+  speaker: "강한솔"
+  file: "2015/-Unlicensed-20150119_강한솔_PA program.pdf"
+- date: 2015-01-12
+  title: "세미나 발표"
+  speaker: "안병민"
+  file: "2015/-Unlicensed-20150112_안병민.pdf"
+- date: 2015-01-04
+  title: "영상 정합을 위한 Line 검출 알고리"
+  speaker: "유용길"
+  file: "2015/-Unlicensed-20150104_유용길_영상 정합을 위한 Line 검출 알고리.pdf"
+- date: 2014-12-22
+  title: "Obtaining 3D structure of ceiling by rotating 2D LRF"
+  speaker: "김진형"
+  file: "2014/-Unlicensed-20141222_김진형_Obtaining 3D structure of ceiling by rotating 2D LRF.pdf"
+- date: 2014-12-08
+  title: "C4.5 source code Pt.3"
+  speaker: "강한솔"
+  file: "2014/-Unlicensed-20141208_강한솔_C4.5 source code Pt.3.pdf"
+- date: 2014-12-01
+  title: "C4.5 Source Code"
+  speaker: "안재원"
+  file: "2014/-Unlicensed-20141201_안재원_C4.5_Source_Code.pdf"
+- date: 2014-11-24
+  title: "세미나 발표"
+  speaker: "안병민"
+  file: "2014/-Unlicensed-20141124_안병민.pdf"
+- date: 2014-10-20
+  title: "Decision tree"
+  speaker: "강한솔"
+  file: "2014/-Unlicensed-20141020_강한솔_Decision tree.pdf"
+- date: 2014-10-13
+  title: "세미나 발표"
+  speaker: "안병민"
+  file: "2014/-Unlicensed-20141013_안병민.pdf"
+- date: 2014-10-08
+  title: "Unified Modeling Language"
+  speaker: "유용길"
+  file: "2014/-Unlicensed-20141008_유용길_Unified_Modeling_Language.pdf"
+- date: 2014-10-01
+  title: "A computer algorithm for reconstructing a scene from two projections"
+  speaker: "김진형"
+  file: "2014/-Unlicensed-20141001_김진형_A computer algorithm for reconstructing a scene from two projections.pdf"
+- date: 2014-09-23
+  title: "Skin tone detection"
+  speaker: "안재원"
+  file: "2014/-Unlicensed-20140923_안재원_Skin_tone_detection.pdf"
+- date: 2014-09-23
+  title: "Harris Corner Detector"
+  speaker: "강한솔"
+  file: "2014/-Unlicensed-20140923_강한솔_Harris Corner Detector.pdf"
+- date: 2014-08-22
+  title: "PTAM Paper Review"
+  speaker: "유용길"
+  file: "2014/-Unlicensed-20140822_유용길_PTAM Paper Review.pdf"
+- date: 2014-08-11
+  title: "A Visual Front-end for Simultaneous Localization and Mapping"
+  speaker: "김진형"
+  file: "2014/-Unlicensed-20140811_김진형_A Visual Front-end for Simultaneous Localization and Mapping.pdf"
+- date: 2014-08-01
+  title: "Convexity Information을 이용한 Fingertip 인식 및 ID 부여"
+  speaker: "강한솔"
+  file: "2014/-Unlicensed-20140801_강한솔_Convexity Information을 이용한 Fingertip 인식 및 ID 부여.pdf"
+- date: 2014-07-25
+  title: "FingerTipDetection"
+  speaker: "안재원"
+  file: "2014/-Unlicensed-20140725_안재원_FingerTipDetection.pdf"
+- date: 2014-07-04
+  title: "Semi-Global Matching 추가 이론 및 구현 PTAM Introduce"
+  speaker: "유용길"
+  file: "2014/-Unlicensed-20140704_유용길_Semi-Global Matching 추가 이론 및 구현 PTAM Introduce.pdf"
+- date: 2014-06-27
+  title: "DLL"
+  speaker: "김진욱"
+  file: "2014/-Unlicensed-20140627_김진욱_DLL.pdf"
+- date: 2014-06-13
+  title: "Morphological Opetation"
+  speaker: "강한솔"
+  file: "2014/-Unlicensed-20140613_강한솔_Morphological Opetation.pdf"
+- date: 2014-06-13
+  title: "D&C"
+  speaker: "안재원"
+  file: "2014/-Unlicensed-20140613_안재원_D&C.pdf"
+- date: 2014-05-09
+  title: "Semi-Global Matching 논문 리뷰"
+  speaker: "유용길"
+  file: "2014/-Unlicensed-20140509_유용길_Semi-Global Matching 논문 리뷰.pdf"
+- date: 2014-04-25
+  title: "BumbleBee"
+  speaker: "김진형"
+  file: "2014/-Unlicensed-20140425_김진형_BumbleBee.pdf"
+- date: 2014-04-18
+  title: "OLE-DB"
+  speaker: "김진욱"
+  file: "2014/-Unlicensed-20140418_김진욱_OLE-DB.pdf"
+- date: 2014-04-13
+  title: "Preprocessor"
+  speaker: "안재원"
+  file: "2014/-Unlicensed-20140413_안재원_Preprocessor.pdf"
+- date: 2014-04-04
+  title: "Hand detection"
+  speaker: "강한솔"
+  file: "2014/-Unlicensed-20140404_강한솔_Hand detection.pdf"
+- date: 2014-03-14
+  title: "C Language환경에서의 속도 지향형 범용 코드 최적화 기법"
+  speaker: "유용길"
+  file: "2014/-Unlicensed-20140314_유용길_C Language환경에서의 속도 지향형 범용 코드 최적화 기법.pdf"
+- date: 2014-02-19
+  title: "Geometry"
+  speaker: "김진욱"
+  file: "2014/-Unlicensed-20140219_김진욱_Geometry.pdf"
+- date: 2014-02-13
+  title: "convex hulls"
+  speaker: "안재원"
+  file: "2014/-Unlicensed-20140213_안재원_convex hulls.pdf"
+- date: 2014-02-13
+  title: "Canny Edge 세미나2"
+  speaker: "강한솔"
+  file: "2014/-Unlicensed-20140213_강한솔_Canny Edge 세미나2.pdf"
+- date: 2014-02-05
+  title: "Open CV를 이용한 Feature Detector 구현"
+  speaker: "강한솔"
+  file: "2014/-Unlicensed-20140205_강한솔_Open CV를 이용한 Feature Detector 구현.pdf"
+- date: 2014-01-22
+  title: "로드 노이즈 능동 제어 시스템"
+  speaker: "유용길"
+  file: "2014/-Unlicensed-20140122_유용길_로드 노이즈 능동 제어 시스템.pdf"
+- date: 2014-01-08
+  title: "LineSegmentation Extraction"
+  speaker: "김진형"
+  file: "2014/-Unlicensed-20140108_김진형_LineSegmentation_Extraction.pdf"
