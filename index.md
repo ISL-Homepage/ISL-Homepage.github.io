@@ -9,10 +9,7 @@ layout: home
 hero:
   name: Image System Laboratory
   text: 영상 시스템 연구실
-  tagline: 충남대학교 메카트로닉스공학과 · 영상 처리, 컴퓨터 비전, 딥러닝
-  image:
-    src: /images/Res_ISL_Logo.png
-    alt: ISL
+  tagline: 충남대학교 메카트로닉스공학과에서 영상 처리와 컴퓨터 비전, 딥러닝을 연구합니다
   actions:
     - theme: brand
       text: 연구실 소개
