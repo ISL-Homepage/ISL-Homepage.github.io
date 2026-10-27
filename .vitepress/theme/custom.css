@@ -11,6 +11,9 @@
   --vp-home-hero-name-background: linear-gradient(120deg, #b3141b 30%, #e0683c);
   --vp-home-hero-image-background-image: linear-gradient(-45deg, #c9252c 50%, #f0a35e 50%);
   --vp-home-hero-image-filter: blur(72px);
+  /* 랩장 표시 색 */
+  --leader-c: #b7791f;
+  --leader-soft: rgba(183, 121, 31, 0.12);
   /* Publication의 Conference 색 */
   --pub-conf: #0e7490;
   --pub-conf-soft: rgba(14, 116, 144, 0.12);
@@ -37,6 +40,8 @@
   --vp-c-brand-1: #f07a7e;
   --vp-c-brand-2: #e85a5f;
   --vp-c-brand-3: #d93a40;
+  --leader-c: #e0b04a;
+  --leader-soft: rgba(224, 176, 74, 0.14);
   --pub-conf: #5ec8d8;
   --pub-conf-soft: rgba(94, 200, 216, 0.14);
 }

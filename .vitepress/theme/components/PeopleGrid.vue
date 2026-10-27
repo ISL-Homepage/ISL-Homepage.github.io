@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { data as groups } from '../../../data/people.data'
+import CrownIcon from './CrownIcon.vue'
 import PersonAvatar from './PersonAvatar.vue'
 
 // people.yaml에서 leader: true 인 사람이 랩장 (검사 스크립트가 한 명만 허용)
@@ -17,7 +18,7 @@ const leader = groups
     <div class="leader">
       <PersonAvatar :name="leader.name" :photo="leader.photo" crown :size="104" />
       <div class="leader-info">
-        <span class="leader-badge">랩장</span>
+        <span class="leader-badge"><CrownIcon />랩장</span>
         <strong>{{ leader.name }}</strong>
         <span class="leader-group">{{ leader.group }}</span>
       </div>
@@ -46,12 +47,11 @@ const leader = groups
   align-items: center;
   gap: 28px;
   margin-top: 28px;
-  padding: 40px 28px 24px;
-  border: 1px solid rgba(224, 165, 22, 0.45);
-  border-radius: 16px;
-  background:
-    radial-gradient(circle at 0% 0%, rgba(245, 197, 66, 0.22), transparent 55%),
-    var(--vp-c-bg-soft);
+  padding: 24px 28px;
+  border: 1px solid var(--vp-c-divider);
+  border-left: 3px solid var(--leader-c);
+  border-radius: 12px;
+  background: var(--vp-c-bg-soft);
 }
 .leader-info {
   display: flex;
@@ -60,15 +60,19 @@ const leader = groups
   gap: 4px;
 }
 .leader-badge {
-  padding: 1px 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 10px 2px 8px;
   border-radius: 999px;
-  background: rgba(224, 165, 22, 0.18);
-  color: #9a6a00;
+  background: var(--leader-soft);
+  color: var(--leader-c);
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 600;
 }
-.dark .leader-badge {
-  color: #f5c542;
+.leader-badge svg {
+  width: 14px;
+  height: 14px;
 }
 .leader-info strong {
   font-size: 22px;
@@ -100,7 +104,7 @@ const leader = groups
   flex-direction: column;
   align-items: center;
   gap: 6px;
-  padding: 28px 10px 16px;
+  padding: 20px 10px 16px;
   border: 1px solid var(--vp-c-divider);
   border-radius: 12px;
   background: var(--vp-c-bg-soft);
@@ -112,7 +116,7 @@ const leader = groups
   transform: translateY(-2px);
 }
 .person.is-leader {
-  border-color: rgba(224, 165, 22, 0.55);
+  border-color: var(--leader-c);
 }
 .person :deep(.person-avatar) {
   margin-bottom: 4px;
