@@ -1,0 +1,68 @@
+# 2026년 1학기 강의
+#
+# 매주 공지 열기: 해당 주차의 open 을 true 로 바꾸면 됩니다.
+#   false 인 공지는 학생 화면에 "공개 예정"으로 흐리게 보입니다.
+# 파일 경로(file)는 public/attachments/ 기준입니다.
+#   새 학기 파일은 public/attachments/lecture/<연도>-<학기>/ 에 넣는 것을 권장합니다.
+#
+# 공지 항목:
+#   week:  주차 숫자 (선택. 없으면 목록 맨 아래에 표시)
+#   title: 제목 (선택. 없으면 "N주차 실험 공지")
+#   file:  첨부 파일 (선택)
+#   open:  true 면 공개
+
+year: 2026
+semester: spring # spring(1학기) | fall(2학기)
+courses:
+  - id: experiments # 페이지 주소 /lecture/experiments
+    title: 전자회로실험
+    desc: 강의 계획서, 주차별 실험 공지, 보고서 양식
+    materials:
+      - title: 강의 계획서
+        file: 전자회로실험_2026_syllabus.pdf
+      - title: OrCAD 설치 및 사용법
+        file: 2023_OrCAD_사용법.pdf
+      - title: 실험 보고서 양식
+        file: 2025_notice/전자회로실험_보고서양식.hwp
+    notices:
+      - week: 2
+        file: 2025_notice/2주차 실험 공지.pdf
+        open: true
+      - week: 3
+        file: 2025_notice/3주차 실험 공지.pdf
+        open: true
+      - week: 4
+        file: 2025_notice/4주차 실험 공지.pdf
+        open: true
+      - week: 5
+        file: 2025_notice/5주차 실험 공지.pdf
+        open: true
+      - week: 6
+        file: 2025_notice/6주차 실험 공지.pdf
+        open: true
+      - week: 7
+        file: 2025_notice/7주차 실험 공지.pdf
+        open: true
+      - week: 8
+        title: 중간고사 주간
+        open: false
+      - week: 9
+        file: 2025_notice/9주차 실험 공지.pdf
+        open: true
+      - week: 10
+        file: 2025_notice/10주차 실험 공지.pdf
+        open: true
+      - week: 11
+        file: 2025_notice/11주차 실험 공지.pdf
+        open: true
+      - week: 12
+        file: 2025_notice/12주차 실험 공지.pdf
+        open: true
+      - week: 13
+        file: 2025_notice/13주차 실험 공지.pdf
+        open: true
+      - week: 14
+        open: false
+      - title: 프로젝트 설계 공지
+        file: 2025_notice/프로젝트설계공지_2025.pdf
+        open: false

@@ -1,12 +1,18 @@
 import { defineConfig } from 'vitepress'
 import { execFileSync } from 'node:child_process'
+import { readdirSync } from 'node:fs'
+
+const lectureFiles = readdirSync('data/lectures').map((f) => `data/lectures/${f}`)
 
 // 데이터 파일로 그리는 페이지는 md 파일보다 데이터 파일이 더 자주 바뀐다.
 // 해당 데이터 파일의 마지막 커밋 시각을 "최종 수정"에 함께 반영한다.
 const dataDeps: Record<string, string[]> = {
   'seminar/index.md': ['data/seminars.yaml'],
   'people/index.md': ['data/people.yaml'],
-  'publication/index.md': ['data/publications.yaml']
+  'publication/index.md': ['data/publications.yaml'],
+  'lecture/index.md': lectureFiles,
+  'lecture/experiments.md': lectureFiles,
+  'lecture/programming.md': lectureFiles
 }
 
 function gitTimestamp(file: string): number {
@@ -56,6 +62,7 @@ export default defineConfig({
       {
         text: 'Lecture',
         items: [
+          { text: '전체', link: '/lecture/' },
           { text: '전자회로실험', link: '/lecture/experiments' },
           { text: '프로그래밍응용', link: '/lecture/programming' }
         ]

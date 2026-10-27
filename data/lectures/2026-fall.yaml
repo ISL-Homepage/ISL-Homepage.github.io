@@ -1,0 +1,9 @@
+# 2026년 2학기 강의. 작성 방법은 2026-spring.yaml 맨 위 설명을 참고하세요.
+
+year: 2026
+semester: fall # spring(1학기) | fall(2학기)
+courses:
+  - id: programming # 페이지 주소 /lecture/programming
+    title: 프로그래밍응용
+    materials: []
+    notices: []

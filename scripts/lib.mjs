@@ -8,6 +8,8 @@ export const paths = {
   seminars: join(root, 'data/seminars.yaml'),
   publications: join(root, 'data/publications.yaml'),
   people: join(root, 'data/people.yaml'),
+  lectures: join(root, 'data/lectures'),
+  attachments: join(root, 'public/attachments'),
   seminarPdfs: join(root, 'public/attachments/seminar'),
   images: join(root, 'public/images')
 }
