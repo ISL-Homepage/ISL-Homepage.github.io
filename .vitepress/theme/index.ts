@@ -3,6 +3,7 @@ import DefaultTheme from 'vitepress/theme'
 import type { Theme } from 'vitepress'
 import HeroShowcase from './components/HeroShowcase.vue'
 import PeopleGrid from './components/PeopleGrid.vue'
+import PublicationList from './components/PublicationList.vue'
 import SeminarList from './components/SeminarList.vue'
 import './custom.css'
 
@@ -14,6 +15,7 @@ export default {
     }),
   enhanceApp({ app }) {
     app.component('PeopleGrid', PeopleGrid)
+    app.component('PublicationList', PublicationList)
     app.component('SeminarList', SeminarList)
   }
 } satisfies Theme

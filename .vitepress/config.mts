@@ -5,7 +5,8 @@ import { execFileSync } from 'node:child_process'
 // 해당 데이터 파일의 마지막 커밋 시각을 "최종 수정"에 함께 반영한다.
 const dataDeps: Record<string, string[]> = {
   'seminar/index.md': ['data/seminars.yaml'],
-  'people/index.md': ['data/people.yaml']
+  'people/index.md': ['data/people.yaml'],
+  'publication/index.md': ['data/publications.yaml']
 }
 
 function gitTimestamp(file: string): number {
