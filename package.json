@@ -3,12 +3,15 @@
   "version": "1.0.0",
   "description": "Image System Laboratory (CNU) homepage",
   "scripts": {
-    "docs:dev": "vitepress dev",
-    "docs:build": "vitepress build",
+    "thumbs": "node scripts/seminar-thumbs.mjs",
+    "docs:dev": "npm run thumbs && vitepress dev",
+    "docs:build": "npm run thumbs && vitepress build",
     "docs:preview": "vitepress preview"
   },
   "type": "module",
   "devDependencies": {
+    "@napi-rs/canvas": "1.0.13",
+    "pdfjs-dist": "6.4.299",
     "vitepress": "1.6.4",
     "yaml": "2.9.1"
   },

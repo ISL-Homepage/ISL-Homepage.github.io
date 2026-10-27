@@ -311,8 +311,8 @@
   speaker: "유용길"
   file: "2015/-Unlicensed-20160111_유용길_Exact Stereo Calibration.pdf"
 - date: 2016-01-02
-  title: "SupportVectorMachine"
-  speaker: "-"
+  title: "Support Vector Machine"
+  speaker: "강한솔"
   file: "2016/-Unlicensed-20160102__SupportVectorMachine.pdf"
 - date: 2015-12-17
   title: "Robust Digital Image Stabilization Using the Kalman Filter"
@@ -375,7 +375,7 @@
   speaker: "강한솔"
   file: "2015/-Unlicensed-20150508_강한솔_Basis of Camera Calibration Pt1.pdf"
 - date: 2015-04-24
-  title: "세미나 발표"
+  title: "마커를 활용한 위치 추정 알고리즘"
   speaker: "안병민"
   file: "2015/-Unlicensed-20150424_안병민.pdf"
 - date: 2015-04-24
@@ -415,11 +415,11 @@
   speaker: "강한솔"
   file: "2015/-Unlicensed-20150119_강한솔_PA program.pdf"
 - date: 2015-01-12
-  title: "세미나 발표"
+  title: "마커를 활용한 위치 추정 알고리즘"
   speaker: "안병민"
   file: "2015/-Unlicensed-20150112_안병민.pdf"
 - date: 2015-01-04
-  title: "영상 정합을 위한 Line 검출 알고리"
+  title: "영상 정합을 위한 Line 검출 알고리즘"
   speaker: "유용길"
   file: "2015/-Unlicensed-20150104_유용길_영상 정합을 위한 Line 검출 알고리.pdf"
 - date: 2014-12-22
@@ -435,7 +435,7 @@
   speaker: "안재원"
   file: "2014/-Unlicensed-20141201_안재원_C4.5_Source_Code.pdf"
 - date: 2014-11-24
-  title: "세미나 발표"
+  title: "C4.5 Reference Code 분석"
   speaker: "안병민"
   file: "2014/-Unlicensed-20141124_안병민.pdf"
 - date: 2014-10-20
@@ -443,7 +443,7 @@
   speaker: "강한솔"
   file: "2014/-Unlicensed-20141020_강한솔_Decision tree.pdf"
 - date: 2014-10-13
-  title: "세미나 발표"
+  title: "마커를 활용한 위치 추정 알고리즘"
   speaker: "안병민"
   file: "2014/-Unlicensed-20141013_안병민.pdf"
 - date: 2014-10-08
