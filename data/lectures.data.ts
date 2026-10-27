@@ -24,6 +24,8 @@ export interface Course {
 export interface Term {
   year: number
   semester: Semester
+  /** 종강한 학기. 과목 페이지에 공지 대신 "다음 학기 준비 중" 안내가 나온다 */
+  ended: boolean
   courses: Course[]
 }
 
@@ -47,6 +49,7 @@ export default {
       return {
         year: Number(raw.year),
         semester: raw.semester,
+        ended: raw.ended === true,
         courses: (raw.courses ?? []).map((c: any) => ({
           id: String(c.id),
           title: String(c.title),

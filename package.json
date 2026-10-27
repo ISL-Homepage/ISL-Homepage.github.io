@@ -3,14 +3,13 @@
   "version": "1.0.0",
   "description": "Image System Laboratory (CNU) homepage",
   "scripts": {
+    "setup": "sh scripts/setup.sh",
     "data": "node scripts/sync-seminars.mjs && node scripts/check-data.mjs && node scripts/seminar-thumbs.mjs",
     "dev": "npm run data && vitepress dev",
     "build": "npm run data && vitepress build",
     "preview": "vitepress preview",
     "deploy": "node scripts/deploy.mjs",
-    "docs:dev": "npm run dev",
-    "docs:build": "npm run build",
-    "docs:preview": "npm run preview"
+    "deploy:preview": "node scripts/deploy.mjs --preview"
   },
   "type": "module",
   "devDependencies": {

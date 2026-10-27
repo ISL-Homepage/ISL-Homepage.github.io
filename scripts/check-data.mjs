@@ -148,7 +148,7 @@ const unknownKeys = (obj, allowed) => Object.keys(obj).filter((k) => !allowed.in
 // 강의 (data/lectures/<연도>-<학기>.yaml)
 {
   const SEMESTERS = ['spring', 'fall']
-  const TERM_KEYS = ['year', 'semester', 'courses']
+  const TERM_KEYS = ['year', 'semester', 'ended', 'courses']
   const COURSE_KEYS = ['id', 'title', 'desc', 'materials', 'notices']
   const MATERIAL_KEYS = ['title', 'file']
   const NOTICE_KEYS = ['week', 'title', 'file', 'open']
@@ -181,6 +181,9 @@ const unknownKeys = (obj, allowed) => Object.keys(obj).filter((k) => !allowed.in
     }
     if (m && (String(term.year) !== m[1] || term.semester !== m[2])) {
       errors.push(`${name}: 파일 이름과 year, semester가 다릅니다. (파일: ${m[1]}-${m[2]}, 내용: ${term.year}-${term.semester})`)
+    }
+    if (term.ended != null && typeof term.ended !== 'boolean') {
+      errors.push(`${name} ${lineAt(['ended'])}번째 줄: ended는 true 또는 false 입니다. (지금: ${term.ended})`)
     }
     for (const k of unknownKeys(term, TERM_KEYS)) errors.push(`${name}: 알 수 없는 항목 "${k}" (쓸 수 있는 것: ${TERM_KEYS.join(', ')})`)
     if (!Array.isArray(term.courses)) {
@@ -238,5 +241,48 @@ const unknownKeys = (obj, allowed) => Object.keys(obj).filter((k) => !allowed.in
   }
 }
 
+// 과제, 저서
+{
+  const { name, doc, lineOf } = loadMap(paths.projects)
+  const data = doc?.toJSON()
+  if (doc && (!data || typeof data !== 'object' || Array.isArray(data))) {
+    errors.push(`${name}: projects, books 목록을 적어야 합니다.`)
+  } else if (doc) {
+    const PROJECT_KEYS = ['title', 'org', 'program', 'start', 'end']
+    const BOOK_KEYS = ['title', 'authors', 'publisher', 'date', 'isbn', 'cover', 'url']
+    for (const k of unknownKeys(data, ['projects', 'books'])) errors.push(`${name}: 알 수 없는 항목 "${k}" (쓸 수 있는 것: projects, books)`)
+    for (const [listKey, keys] of [['projects', PROJECT_KEYS], ['books', BOOK_KEYS]]) {
+      const list = data[listKey] ?? []
+      if (!Array.isArray(list)) {
+        errors.push(`${name}: ${listKey}는 "- " 로 시작하는 목록이어야 합니다.`)
+        continue
+      }
+      list.forEach((it, i) => {
+        const at = `${name} ${lineOf(doc.getIn([listKey, i], true))}번째 줄`
+        if (!it || typeof it !== 'object') return errors.push(`${at}: 항목 형식이 잘못되었습니다.`)
+        if (blank(it.title)) errors.push(`${at}: title(제목)이 비어 있습니다.`)
+        for (const k of unknownKeys(it, keys)) errors.push(`${at}: 알 수 없는 항목 "${k}" (쓸 수 있는 것: ${keys.join(', ')})`)
+        if (listKey === 'projects') {
+          if (blank(it.org)) errors.push(`${at}: org(발주 기관)가 비어 있습니다.`)
+          for (const k of ['start', 'end']) {
+            if (it[k] != null && !isDate(it[k])) errors.push(`${at}: ${k}는 2026-03-01 형식이어야 합니다. (지금: ${it[k]})`)
+          }
+          if (isDate(it.start) && isDate(it.end) && String(it.end) < String(it.start)) {
+            errors.push(`${at}: end(종료일)가 start(시작일)보다 앞섭니다.`)
+          }
+        } else {
+          if (blank(it.authors)) errors.push(`${at}: authors(저자)가 비어 있습니다.`)
+          if (blank(it.publisher)) errors.push(`${at}: publisher(출판사)가 비어 있습니다.`)
+          if (!isDate(it.date)) errors.push(`${at}: date는 2026-03-01 형식이어야 합니다. (지금: ${it.date ?? '없음'})`)
+          if (it.cover && !existsSync(join(root, 'public/images/books', it.cover))) {
+            errors.push(`${at}: 표지가 없습니다: public/images/books/${it.cover}`)
+          }
+          if (it.url && !/^https?:\/\//.test(it.url)) errors.push(`${at}: url은 https:// 로 시작해야 합니다.`)
+        }
+      })
+    }
+  }
+}
+
 if (errors.length) fail('데이터 검사', errors)
-console.log('✔ 데이터 검사 통과 (세미나, 논문, 사람, 장비, 강의)')
+console.log('✔ 데이터 검사 통과 (세미나, 논문, 사람, 장비, 강의, 과제)')

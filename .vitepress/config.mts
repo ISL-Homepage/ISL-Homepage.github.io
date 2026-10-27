@@ -4,6 +4,9 @@ import { readdirSync } from 'node:fs'
 
 const lectureFiles = readdirSync('data/lectures').map((f) => `data/lectures/${f}`)
 
+// 사이트가 올라가는 경로. 정식 배포는 '/', 미리보기(npm run deploy:preview)는 '/temp/'
+const base = process.env.SITE_BASE || '/'
+
 // 데이터 파일로 그리는 페이지는 md 파일보다 데이터 파일이 더 자주 바뀐다.
 // 해당 데이터 파일의 마지막 커밋 시각을 "최종 수정"에 함께 반영한다.
 const dataDeps: Record<string, string[]> = {
@@ -11,6 +14,7 @@ const dataDeps: Record<string, string[]> = {
   'people/index.md': ['data/people.yaml'],
   'publication/index.md': ['data/publications.yaml'],
   'about/index.md': ['data/equipment.yaml'],
+  'research/project.md': ['data/projects.yaml'],
   'lecture/index.md': lectureFiles,
   'lecture/experiments.md': lectureFiles,
   'lecture/programming.md': lectureFiles
@@ -29,6 +33,7 @@ function gitTimestamp(file: string): number {
 
 export default defineConfig({
   lang: 'ko-KR',
+  base,
   title: 'ISL',
   description: 'Image System Laboratory, Chungnam National University',
   cleanUrls: true,
@@ -37,7 +42,10 @@ export default defineConfig({
   // .hwp 등 첨부파일을 페이지 링크로 오인하므로 첨부 경로는 검사에서 제외
   ignoreDeadLinks: [/^\/attachments\//],
   head: [
-    ['link', { rel: 'icon', href: '/favicon.ico' }],
+    // favicon은 tools/make-favicon.mjs 로 만든다. head 링크에는 base가 자동으로 붙지 않아 직접 붙인다
+    ['link', { rel: 'icon', href: `${base}favicon.ico`, sizes: '48x48' }],
+    ['link', { rel: 'icon', type: 'image/png', href: `${base}favicon.png`, sizes: '192x192' }],
+    ['link', { rel: 'apple-touch-icon', href: `${base}apple-touch-icon.png` }],
     // Pretendard 글꼴 (jsDelivr CDN, 페이지에 쓰인 글자만 내려받는 dynamic subset)
     ['link', { rel: 'preconnect', href: 'https://cdn.jsdelivr.net', crossorigin: '' }],
     [
@@ -57,7 +65,6 @@ export default defineConfig({
   },
 
   themeConfig: {
-    logo: '/images/Res_ISL_Logo.png',
     siteTitle: 'Image System Lab',
 
     nav: [

@@ -4,11 +4,10 @@ import { withBase } from 'vitepress'
 import { data } from '../../../data/lectures.data'
 import type { LectureFile } from '../../../data/lectures.data'
 import PdfViewer from './PdfViewer.vue'
+import { SEMESTER_LABEL, isEnded } from '../lecture'
 
 // 이 과목의 최신 연도 학기 데이터. 최신 연도에 없으면 "준비 중"
 const props = defineProps<{ id: string }>()
-
-const SEMESTER_LABEL = { spring: '1학기', fall: '2학기' } as const
 
 const found = computed(() => {
   for (const term of data.terms) {
@@ -18,6 +17,27 @@ const found = computed(() => {
   }
   return null
 })
+// 종강했거나 아직 올린 것이 없으면 공지 대신 안내 화면을 보여 준다
+const placeholder = computed(() => {
+  const f = found.value
+  if (f && isEnded(f.term)) {
+    return {
+      chip: `${f.term.year + 1} ${SEMESTER_LABEL[f.term.semester]} 준비 중`,
+      title: `${f.term.year}년 ${SEMESTER_LABEL[f.term.semester]} 강의가 끝났습니다`,
+      text: `${f.term.year + 1}년 ${SEMESTER_LABEL[f.term.semester]} 강의 자료와 주차별 공지는 개강 후 이곳에 올라옵니다.`
+    }
+  }
+  if (!f || (!f.course.materials.length && !f.course.notices.length)) {
+    const when = f ? `${f.term.year}년 ${SEMESTER_LABEL[f.term.semester]}` : `${data.latestYear}년`
+    return {
+      chip: 'Coming soon',
+      title: '강의를 준비하고 있습니다',
+      text: `${when} 강의 자료와 주차별 공지는 개강 후 이곳에 올라옵니다.`
+    }
+  }
+  return null
+})
+
 const notices = computed(() => found.value?.course.notices ?? [])
 const openCount = computed(() => notices.value.filter((n) => n.open).length)
 // 가장 마지막에 공개한 공지 (목록 순서 기준)
@@ -42,7 +62,16 @@ function open(f: LectureFile, e: MouseEvent) {
 </script>
 
 <template>
-  <template v-if="found">
+  <div v-if="placeholder" class="placeholder">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <rect x="3" y="4.5" width="18" height="16" rx="2.5" />
+      <path d="M3 9.5h18M8 2.5v4M16 2.5v4M12 13v3.2l2 1.3" />
+    </svg>
+    <span class="placeholder-chip">{{ placeholder.chip }}</span>
+    <strong>{{ placeholder.title }}</strong>
+    <p>{{ placeholder.text }}</p>
+  </div>
+  <template v-else-if="found">
     <div class="term">
       <span class="term-chip">{{ found.term.year }} · {{ SEMESTER_LABEL[found.term.semester] }}</span>
       <span v-if="notices.length" class="term-meta">공지 {{ openCount }} / {{ notices.length }} 공개</span>
@@ -85,7 +114,6 @@ function open(f: LectureFile, e: MouseEvent) {
     </ol>
     <p v-else class="empty">아직 올라온 공지가 없습니다.</p>
   </template>
-  <p v-else class="empty">{{ data.latestYear }}년 강의 자료는 준비 중입니다.</p>
 
   <PdfViewer
     v-if="viewing && found"
@@ -97,6 +125,46 @@ function open(f: LectureFile, e: MouseEvent) {
 </template>
 
 <style scoped>
+.placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 32px;
+  padding: 56px 24px;
+  border: 1px dashed var(--vp-c-divider);
+  border-radius: 16px;
+  background: var(--vp-c-bg-soft);
+  text-align: center;
+}
+.placeholder svg {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 4px;
+  fill: none;
+  stroke: var(--vp-c-brand-1);
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.placeholder-chip {
+  padding: 2px 12px;
+  border-radius: 999px;
+  background: var(--vp-c-brand-soft);
+  color: var(--vp-c-brand-1);
+  font-size: 13px;
+  font-weight: 600;
+}
+.placeholder strong {
+  font-size: 20px;
+}
+.vp-doc .placeholder p {
+  max-width: 420px;
+  margin: 0;
+  color: var(--vp-c-text-2);
+  font-size: 15px;
+  line-height: 1.6;
+}
 .term {
   display: flex;
   flex-wrap: wrap;

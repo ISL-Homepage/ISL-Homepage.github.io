@@ -59,7 +59,8 @@ aside: false
   padding: 24px;
   border-radius: 16px;
   background:
-    radial-gradient(circle at 100% 0%, rgba(240, 163, 94, 0.2), transparent 55%),
+    radial-gradient(circle at 100% 0%, rgba(71, 202, 255, 0.16), transparent 55%),
+    radial-gradient(circle at 0% 100%, rgba(189, 52, 254, 0.08), transparent 60%),
     var(--vp-c-bg-soft);
 }
 .prof-photo {

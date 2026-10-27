@@ -52,7 +52,7 @@ onUnmounted(() => clearTimeout(timer))
         :is="s.link ? 'a' : 'div'"
         v-for="(s, i) in slides"
         :key="s.src"
-        :href="s.link"
+        :href="s.link && withBase(s.link)"
         class="slide"
         :class="{ active: i === current }"
         :aria-hidden="i !== current"

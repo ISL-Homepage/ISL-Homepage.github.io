@@ -1,22 +1,18 @@
-/* ISL 로고 색(빨강) 기준 브랜드 색 */
+/* 브랜드 색은 VitePress 기본(인디고)을 그대로 쓰고, 홈 그라데이션만 vitepress.dev와 같게 맞춘다 */
 :root {
   /* 글꼴: Pretendard (config.mts head에서 CDN으로 불러옴) */
   --vp-font-family-base: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui,
     'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
-  --vp-c-brand-1: #b3141b;
-  --vp-c-brand-2: #c9252c;
-  --vp-c-brand-3: #d93a40;
-  --vp-c-brand-soft: rgba(201, 37, 44, 0.12);
   --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: linear-gradient(120deg, #b3141b 30%, #e0683c);
-  --vp-home-hero-image-background-image: linear-gradient(-45deg, #c9252c 50%, #f0a35e 50%);
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe 30%, #41d1ff);
+  --vp-home-hero-image-background-image: linear-gradient(-45deg, #bd34fe 50%, #47caff 50%);
   --vp-home-hero-image-filter: blur(72px);
   /* 랩장 표시 색 */
   --leader-c: #b7791f;
   --leader-soft: rgba(183, 121, 31, 0.12);
-  /* Publication의 Conference 색 */
-  --pub-conf: #0e7490;
-  --pub-conf-soft: rgba(14, 116, 144, 0.12);
+  /* Publication의 Conference 색 (저널=인디고와 확실히 구분되는 주황) */
+  --pub-conf: #c2410c;
+  --pub-conf-soft: rgba(234, 88, 12, 0.12);
 }
 
 /* hero 오른쪽 연구 이미지 카드가 그라데이션 위에 오도록 */
@@ -37,13 +33,10 @@
 }
 
 .dark {
-  --vp-c-brand-1: #f07a7e;
-  --vp-c-brand-2: #e85a5f;
-  --vp-c-brand-3: #d93a40;
   --leader-c: #e0b04a;
   --leader-soft: rgba(224, 176, 74, 0.14);
-  --pub-conf: #5ec8d8;
-  --pub-conf-soft: rgba(94, 200, 216, 0.14);
+  --pub-conf: #fb923c;
+  --pub-conf-soft: rgba(251, 146, 60, 0.16);
 }
 
 /* 한글이 단어 중간에서 줄바꿈되지 않게 */

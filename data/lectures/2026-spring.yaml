@@ -10,6 +10,9 @@
 #   title: 제목 (선택. 없으면 "N주차 실험 공지")
 #   file:  첨부 파일 (선택)
 #   open:  true 면 공개
+#
+# 종강: 1학기는 7월 1일, 2학기는 다음 해 1월 1일부터 자동으로 "다음 학기 준비 중" 안내로 바뀝니다.
+#   그보다 일찍 닫고 싶으면 semester 아래에 ended: true 를 적습니다.
 
 year: 2026
 semester: spring # spring(1학기) | fall(2학기)
