@@ -3,14 +3,29 @@
 충남대학교 영상 시스템 연구실(Image System Laboratory) 홈페이지입니다.
 [VitePress](https://vitepress.dev)로 만들었고, `main` 브랜치에 push 하면 GitHub Pages에 자동 배포됩니다.
 
-GitHub 웹에서 파일을 고치고 commit 해도 됩니다. 몇 분 뒤 Actions 탭에서 배포가 끝나면 반영됩니다.
+## 배포
+
+```bash
+npm run deploy                     # 검사, 빌드 후 바뀐 파일을 보여 주고 확인(y)하면 커밋하고 push
+npm run deploy -- "3주차 공지 추가"   # 커밋 메시지 지정
+```
+
+`npm run deploy`는 아래 순서로 진행하고, 중간에 하나라도 실패하면 배포하지 않습니다.
+
+1. 새로 넣은 세미나 PDF를 `data/seminars.yaml`에 자동 추가
+2. 데이터 검사: yaml 형식, 날짜, 빠진 항목, 없는 PDF와 사진 등. 문제가 있으면 **파일과 줄 번호, 고칠 내용**을 보여 줍니다
+3. 세미나 썸네일 생성, 사이트 빌드
+4. 바뀐 파일 목록을 보여 주고 확인을 받은 뒤 커밋, `git push`
+5. push 하면 GitHub Actions가 GitHub Pages에 배포합니다(몇 분 소요)
+
+GitHub 웹에서 파일을 직접 고쳐 commit 해도 됩니다. 이때도 Actions에서 같은 검사가 돌고, 실패하면 사이트는 그대로이며 Actions 탭에 오류 내용이 나옵니다.
 
 ## 자주 하는 일
 
 | 하고 싶은 일 | 고칠 곳 |
 |---|---|
 | 실험 공지 올리기 | PDF를 `public/attachments/<폴더>/`에 넣고 `lecture/experiments.md`에 링크 한 줄 추가 |
-| 세미나 자료 올리기 | PDF를 `public/attachments/seminar/<연도>/`에 넣고 `data/seminars.yaml`에 항목 하나 추가 |
+| 세미나 자료 올리기 | PDF를 `public/attachments/seminar/<연도>/`에 `YYYYMMDD_발표자_제목.pdf` 이름으로 넣기 (목록은 자동 추가) |
 | 논문 추가 | `data/publications.yaml`에 항목 하나 추가 |
 | 사람 추가, 졸업 처리 | `data/people.yaml` (사진은 `public/images/`) |
 | 홈 화면 문구, 이미지, 카드 | `index.md` 맨 위 front matter ([아래 설명](#홈-화면-바꾸기)) |
@@ -73,8 +88,15 @@ features:
 
 ## 세미나 자료 올리기
 
-1. PDF를 `public/attachments/seminar/<연도>/`에 넣습니다. 파일 이름 예: `20260301_홍길동_발표제목.pdf`
-2. `data/seminars.yaml`에 항목을 추가합니다. 순서는 상관없습니다(날짜순 자동 정렬).
+PDF를 `public/attachments/seminar/<연도>/`에 **`YYYYMMDD_발표자_제목.pdf`** 이름으로 넣으면 끝입니다.
+예: `public/attachments/seminar/2026/20260301_홍길동_Visual SLAM 소개.pdf`
+
+`npm run dev`, `npm run build`, `npm run deploy` 중 하나를 실행하면 파일 이름에서 날짜, 발표자, 제목을 읽어
+`data/seminars.yaml` 맨 아래에 항목이 자동으로 추가됩니다. 이 변경도 함께 커밋하세요(`npm run deploy`는 자동으로 포함).
+
+- 설명(`desc`)을 붙이거나 제목을 다듬고 싶으면 추가된 항목을 고치면 됩니다. 한번 yaml에 들어간 PDF는 다시 건드리지 않습니다.
+- 파일 이름 형식이 다르면 오류로 알려 줍니다. 이름을 바꾸거나, 아래처럼 yaml에 직접 적으면 됩니다.
+- 순서는 상관없습니다(날짜순 자동 정렬).
    ```yaml
    - date: 2026-03-01
      title: "발표 제목"
@@ -104,9 +126,10 @@ Node.js 20 이상이 필요합니다.
 
 ```bash
 npm ci
-npm run docs:dev      # http://localhost:5173 (저장하면 바로 반영)
-npm run docs:build    # 배포용 빌드 (.vitepress/dist)
-npm run docs:preview  # 빌드 결과 확인
+npm run dev       # http://localhost:5173 (저장하면 바로 반영)
+npm run build     # 배포용 빌드 (.vitepress/dist)
+npm run preview   # 빌드 결과 확인
+npm run data      # 데이터 반영과 검사만
 ```
 
 ## 구조
@@ -117,7 +140,7 @@ about/ people/ publication/ research/ lecture/ seminar/   각 메뉴 페이지
 data/                    세미나, 논문, 사람 데이터(yaml)와 로더
 public/images/           이미지
 public/attachments/      강의 첨부, 세미나 PDF
-scripts/                 빌드 보조 스크립트 (세미나 썸네일 생성)
+scripts/                 세미나 PDF 반영, 데이터 검사, 썸네일 생성, 배포
 .vitepress/config.mts    사이트 설정, 메뉴
 .vitepress/theme/        테마 확장, 컴포넌트, 색상
 docs/MIGRATION.md        옛 사이트(isl-homepage.github.io)에서 옮기는 절차
