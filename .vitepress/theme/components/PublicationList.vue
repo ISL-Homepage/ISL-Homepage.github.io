@@ -92,7 +92,8 @@ const authorsHtml = (a: string) => escape(a).replace(PROF, '<b>$1</b>')
           <span class="chip scope" :class="p.scope">{{ SCOPE_LABEL[p.scope] }}</span>
         </div>
         <template v-if="p.title">
-          <strong class="title">{{ p.title }}</strong>
+          <a v-if="p.url" class="title" :href="p.url" target="_blank" rel="noopener">{{ p.title }}</a>
+          <strong v-else class="title">{{ p.title }}</strong>
           <p v-if="p.authors" class="authors" v-html="authorsHtml(p.authors)" />
           <p v-if="p.venue" class="venue">{{ p.venue }}</p>
         </template>
@@ -228,7 +229,16 @@ const authorsHtml = (a: string) => escape(a).replace(PROF, '<b>$1</b>')
 .title {
   display: block;
   font-size: 15px;
+  font-weight: 600;
   line-height: 1.5;
+}
+.vp-doc a.title {
+  color: var(--vp-c-text-1);
+  text-decoration: none;
+}
+.vp-doc a.title:hover {
+  color: var(--vp-c-brand-1);
+  text-decoration: underline;
 }
 .authors,
 .venue {

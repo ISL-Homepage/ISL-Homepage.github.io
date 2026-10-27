@@ -9,6 +9,7 @@ export interface Publication {
   title?: string
   venue?: string
   text?: string
+  url?: string
 }
 
 declare const data: Publication[]
