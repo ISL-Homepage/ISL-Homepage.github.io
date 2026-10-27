@@ -28,6 +28,7 @@ GitHub 웹에서 파일을 직접 고쳐 commit 해도 됩니다. 이때도 Acti
 | 세미나 자료 올리기 | PDF를 `public/attachments/seminar/<연도>/`에 `YYYYMMDD_발표자_제목.pdf` 이름으로 넣기 (목록은 자동 추가) |
 | 논문 추가 | `data/publications.yaml`에 항목 하나 추가 |
 | 사람 추가, 졸업 처리, 소속 변경 | `data/people.yaml` (사진은 `public/images/people/`에 얼굴이 가운데 오는 정사각형으로) |
+| 랩장 지정, 교체 | `data/people.yaml`에서 그 사람 항목에 `leader: true` (한 명만. 이전 랩장의 것은 지우기) |
 | 연구 장비 추가 | `data/equipment.yaml` (사진은 `public/images/equipment/`) |
 | 홈 화면 문구, 이미지, 카드 | `index.md` 맨 위 front matter ([아래 설명](#홈-화면-바꾸기)) |
 | 상단 메뉴 | `.vitepress/config.mts`의 `nav` |

@@ -1,11 +1,29 @@
 <script setup lang="ts">
-import { withBase } from 'vitepress'
 import { data as groups } from '../../../data/people.data'
+import PersonAvatar from './PersonAvatar.vue'
 
-const photoUrl = (photo: string) => withBase(encodeURI(`/images/people/${photo}`))
+// people.yaml에서 leader: true 인 사람이 랩장 (검사 스크립트가 한 명만 허용)
+const leader = groups
+  .flatMap((g) => g.members.map((p) => ({ ...p, group: g.group })))
+  .find((p) => p.leader)
 </script>
 
 <template>
+  <section v-if="leader">
+    <h2 id="lab-leader" tabindex="-1">
+      Lab Leader
+      <a class="header-anchor" href="#lab-leader" aria-label="Lab Leader">&#8203;</a>
+    </h2>
+    <div class="leader">
+      <PersonAvatar :name="leader.name" :photo="leader.photo" crown :size="104" />
+      <div class="leader-info">
+        <span class="leader-badge">랩장</span>
+        <strong>{{ leader.name }}</strong>
+        <span class="leader-group">{{ leader.group }}</span>
+      </div>
+    </div>
+  </section>
+
   <section v-for="g in groups" :key="g.group">
     <h2 :id="g.group" tabindex="-1">
       {{ g.group }}
@@ -13,15 +31,8 @@ const photoUrl = (photo: string) => withBase(encodeURI(`/images/people/${photo}`
       <a class="header-anchor" :href="`#${g.group}`" :aria-label="g.group">&#8203;</a>
     </h2>
     <div class="people-grid">
-      <div v-for="p in g.members" :key="p.name" class="person">
-        <img v-if="p.photo" :src="photoUrl(p.photo)" :alt="p.name" loading="lazy" />
-        <!-- 사진이 없으면 기본 프로필 아바타 -->
-        <span v-else class="avatar" aria-hidden="true">
-          <svg viewBox="0 0 64 64">
-            <circle cx="32" cy="25" r="12" />
-            <path d="M10 58c2-12 11-19 22-19s20 7 22 19z" />
-          </svg>
-        </span>
+      <div v-for="p in g.members" :key="p.name" class="person" :class="{ 'is-leader': p.leader }">
+        <PersonAvatar :name="p.name" :photo="p.photo" :crown="p.leader" />
         <strong>{{ p.name }}</strong>
         <span v-if="p.affiliation" class="affiliation">{{ p.affiliation }}</span>
       </div>
@@ -30,6 +41,42 @@ const photoUrl = (photo: string) => withBase(encodeURI(`/images/people/${photo}`
 </template>
 
 <style scoped>
+.leader {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin-top: 28px;
+  padding: 40px 28px 24px;
+  border: 1px solid rgba(224, 165, 22, 0.45);
+  border-radius: 16px;
+  background:
+    radial-gradient(circle at 0% 0%, rgba(245, 197, 66, 0.22), transparent 55%),
+    var(--vp-c-bg-soft);
+}
+.leader-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+.leader-badge {
+  padding: 1px 10px;
+  border-radius: 999px;
+  background: rgba(224, 165, 22, 0.18);
+  color: #9a6a00;
+  font-size: 12px;
+  font-weight: 700;
+}
+.dark .leader-badge {
+  color: #f5c542;
+}
+.leader-info strong {
+  font-size: 22px;
+}
+.leader-group {
+  color: var(--vp-c-text-2);
+  font-size: 14px;
+}
 .count {
   display: inline-block;
   margin-left: 6px;
@@ -53,7 +100,7 @@ const photoUrl = (photo: string) => withBase(encodeURI(`/images/people/${photo}`
   flex-direction: column;
   align-items: center;
   gap: 6px;
-  padding: 18px 10px 16px;
+  padding: 28px 10px 16px;
   border: 1px solid var(--vp-c-divider);
   border-radius: 12px;
   background: var(--vp-c-bg-soft);
@@ -64,30 +111,11 @@ const photoUrl = (photo: string) => withBase(encodeURI(`/images/people/${photo}`
   border-color: var(--vp-c-brand-1);
   transform: translateY(-2px);
 }
-.person img,
-.avatar {
-  width: 88px;
-  height: 88px;
+.person.is-leader {
+  border-color: rgba(224, 165, 22, 0.55);
+}
+.person :deep(.person-avatar) {
   margin-bottom: 4px;
-  border-radius: 50%;
-}
-.person img {
-  object-fit: cover;
-  box-shadow: 0 0 0 3px var(--vp-c-bg), 0 0 0 4px var(--vp-c-divider);
-}
-.avatar {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  overflow: hidden;
-  background: var(--vp-c-default-soft);
-  box-shadow: 0 0 0 3px var(--vp-c-bg), 0 0 0 4px var(--vp-c-divider);
-}
-.avatar svg {
-  width: 78%;
-  height: 78%;
-  fill: var(--vp-c-text-3);
-  opacity: 0.55;
 }
 .person strong {
   font-size: 15px;

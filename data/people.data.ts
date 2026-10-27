@@ -5,6 +5,8 @@ export interface Person {
   name: string
   affiliation?: string
   photo?: string
+  /** 랩장이면 true (한 명만) */
+  leader?: boolean
 }
 
 export interface PeopleGroup {

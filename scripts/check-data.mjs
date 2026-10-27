@@ -88,6 +88,7 @@ const unknownKeys = (obj, allowed) => Object.keys(obj).filter((k) => !allowed.in
 // 사람
 {
   const { name, items } = load(paths.people)
+  const leaders = []
   for (const [g, line] of items) {
     const at = `${name} ${line}번째 줄`
     if (blank(g?.group)) errors.push(`${at}: group(구분 이름)이 비어 있습니다.`)
@@ -96,11 +97,18 @@ const unknownKeys = (obj, allowed) => Object.keys(obj).filter((k) => !allowed.in
       continue
     }
     for (const m of g.members) {
+      if (m?.leader !== undefined && typeof m.leader !== 'boolean') {
+        errors.push(`${at} (${g.group}, ${m.name}): leader는 true 로만 적습니다. (지금: ${m.leader})`)
+      }
+      if (m?.leader === true) leaders.push(`${m.name}(${g.group})`)
       if (blank(m?.name)) errors.push(`${at} (${g.group}): name(이름)이 비어 있는 사람이 있습니다.`)
       if (m?.photo && !existsSync(join(paths.peopleImages, m.photo))) {
         errors.push(`${at} (${g.group}, ${m.name}): 사진이 없습니다: public/images/people/${m.photo}`)
       }
     }
+  }
+  if (leaders.length > 1) {
+    errors.push(`${name}: 랩장(leader: true)은 한 명만 둘 수 있습니다. 지금 ${leaders.length}명: ${leaders.join(', ')}`)
   }
 }
 

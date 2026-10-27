@@ -2,6 +2,8 @@
 # - photo: public/images/people/ 안의 파일명. 비워 두면 기본 사진(bio-photo.jpg)
 #   사진은 얼굴이 가운데 오는 정사각형(400x400 정도)이 좋습니다.
 # - affiliation: 현재 소속 (졸업생 등)
+# - leader: true 를 붙이면 랩장. Lab Leader 칸에 나오고 사진에 왕관이 씌워집니다. 한 명만 가능합니다.
+#   랩장이 바뀌면 이전 사람의 leader: true 를 지우고 새 사람에게 붙이세요.
 # 교수님 정보는 people/index.md 본문에 있습니다.
 
 - group: Ph.D Candidates
@@ -24,7 +26,7 @@
     - { name: 함수린 }
     - { name: 장민지 }
     - { name: 최유경 }
-    - { name: 정해밀 }
+    - { name: 정해밀, leader: true }
 
 - group: Undergraduates
   members:
