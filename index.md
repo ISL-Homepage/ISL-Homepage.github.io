@@ -1,7 +1,8 @@
 ---
 # 홈 화면은 이 파일의 front matter만 고치면 됩니다.
 # - hero: 상단 큰 제목/문구/버튼/이미지
-# - banner: hero 아래 큰 이미지(GIF 가능). 지우면 배너가 사라집니다
+# - showcase: hero 오른쪽에서 차례로 바뀌는 연구 이미지(GIF 가능). 순서대로 표시
+#   showcaseInterval: 바뀌는 간격(초)
 # - features: 아래 카드(타일). title/details/link/icon 수정
 # 이미지는 public/images/ 에 넣고 /images/파일명 으로 적습니다.
 layout: home
@@ -18,10 +19,23 @@ hero:
       text: 전자회로실험 공지
       link: /lecture/experiments
 
-banner:
-  src: /images/isl_main3.gif
-  alt: Visual SLAM - RAF Set SLAM
-  link: /research/interests
+showcaseInterval: 5
+showcase:
+  - src: /images/isl_main3.gif
+    caption: Visual SLAM (RAF Set SLAM)
+    link: /research/interests
+  - src: /images/FRUC01.png
+    caption: Frame Rate Up Conversion
+    link: /research/interests
+  - src: /images/DEHAZING02.png
+    caption: HLS 기반 안개 제거
+    link: /research/interests
+  - src: /images/3D03.png
+    caption: Active Stereo 3D 복원
+    link: /research/interests
+  - src: /images/SLAM02.png
+    caption: RAFSet SLAM 결과
+    link: /research/interests
 
 features:
   - icon:

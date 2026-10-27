@@ -1,7 +1,7 @@
 import { h } from 'vue'
 import DefaultTheme from 'vitepress/theme'
 import type { Theme } from 'vitepress'
-import HomeBanner from './components/HomeBanner.vue'
+import HeroShowcase from './components/HeroShowcase.vue'
 import PeopleGrid from './components/PeopleGrid.vue'
 import SeminarList from './components/SeminarList.vue'
 import './custom.css'
@@ -10,7 +10,7 @@ export default {
   extends: DefaultTheme,
   Layout: () =>
     h(DefaultTheme.Layout, null, {
-      'home-hero-after': () => h(HomeBanner)
+      'home-hero-image': () => h(HeroShowcase)
     }),
   enhanceApp({ app }) {
     app.component('PeopleGrid', PeopleGrid)

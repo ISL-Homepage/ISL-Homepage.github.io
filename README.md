@@ -11,7 +11,7 @@
 | 세미나 자료 올리기 | PDF를 `public/attachments/seminar/<연도>/`에 넣고 `data/seminars.yaml`에 항목 하나 추가 |
 | 사람 추가·졸업 처리 | `data/people.yaml` (사진은 `public/images/`) |
 | 홈 상단 문구·버튼·카드 | `index.md` 맨 위 front matter의 `hero`, `features` |
-| 홈 배너 이미지(GIF) 교체 | 이미지를 `public/images/`에 넣고 `index.md`의 `banner.src` 수정 (지우면 배너 없음) |
+| 홈 오른쪽 연구 이미지(GIF 가능) | 이미지를 `public/images/`에 넣고 `index.md`의 `showcase` 목록에 `src`, `caption` 추가 |
 | 상단 메뉴 | `.vitepress/config.mts`의 `nav` |
 
 - 글의 "최종 수정" 날짜는 git 커밋 시각으로 자동 표시됩니다. 날짜를 직접 적을 필요가 없습니다.
