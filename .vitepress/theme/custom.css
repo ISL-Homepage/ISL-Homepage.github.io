@@ -1,0 +1,56 @@
+/* ISL 로고 색(빨강) 기준 브랜드 색 */
+:root {
+  --vp-c-brand-1: #b3141b;
+  --vp-c-brand-2: #c9252c;
+  --vp-c-brand-3: #d93a40;
+  --vp-c-brand-soft: rgba(201, 37, 44, 0.12);
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(120deg, #b3141b 30%, #e0683c);
+  --vp-home-hero-image-background-image: linear-gradient(-45deg, #c9252c 50%, #f0a35e 50%);
+  --vp-home-hero-image-filter: blur(64px);
+}
+
+.dark {
+  --vp-c-brand-1: #f07a7e;
+  --vp-c-brand-2: #e85a5f;
+  --vp-c-brand-3: #d93a40;
+}
+
+/* 홈 카드: 썸네일을 카드 폭에 맞춰 크게 */
+.VPFeature .box > .VPImage {
+  width: 100% !important;
+  height: 140px !important;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.VPHero .image-src {
+  border-radius: 12px;
+}
+
+/* 본문 그림 캡션 */
+.vp-doc figure {
+  margin: 24px 0;
+  text-align: center;
+}
+.vp-doc figure img {
+  display: inline-block;
+  max-width: 100%;
+}
+.vp-doc figcaption {
+  color: var(--vp-c-text-2);
+  font-size: 14px;
+}
+
+/* 유튜브 반응형 */
+.vp-doc .video {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  margin: 16px 0;
+}
+.vp-doc .video iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
