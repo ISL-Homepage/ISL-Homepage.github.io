@@ -1,6 +1,7 @@
 ---
 # 홈 화면은 이 파일의 front matter만 고치면 됩니다.
 # - hero: 상단 큰 제목/문구/버튼/이미지
+# - banner: hero 아래 큰 이미지(GIF 가능). 지우면 배너가 사라집니다
 # - features: 아래 카드(타일). title/details/link/icon 수정
 # 이미지는 public/images/ 에 넣고 /images/파일명 으로 적습니다.
 layout: home
@@ -19,6 +20,11 @@ hero:
     - theme: alt
       text: 전자회로실험 공지
       link: /lecture/experiments
+
+banner:
+  src: /images/isl_main3.gif
+  alt: Visual SLAM - RAF Set SLAM
+  link: /research/interests
 
 features:
   - icon:
