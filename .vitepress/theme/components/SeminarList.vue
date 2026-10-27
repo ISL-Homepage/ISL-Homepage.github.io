@@ -1,8 +1,9 @@
 <script setup lang="ts">
-import { computed, onMounted, onUnmounted, ref, watch } from 'vue'
+import { computed, onMounted, ref } from 'vue'
 import { withBase } from 'vitepress'
 import { data as years } from '../../../data/seminars.data'
 import type { Seminar } from '../../../data/seminars.data'
+import PdfViewer from './PdfViewer.vue'
 
 const encode = (path: string) => withBase(encodeURI(path).replace(/#/g, '%23'))
 const pdfUrl = (s: Seminar) => encode(`/attachments/seminar/${s.file}`)
@@ -47,11 +48,6 @@ const canEmbed = ref(false)
 
 onMounted(() => {
   canEmbed.value = navigator.pdfViewerEnabled === true && window.innerWidth >= 768
-  window.addEventListener('keydown', onKey)
-})
-onUnmounted(() => {
-  window.removeEventListener('keydown', onKey)
-  document.documentElement.style.overflow = ''
 })
 
 function open(s: Seminar, e: MouseEvent) {
@@ -59,12 +55,6 @@ function open(s: Seminar, e: MouseEvent) {
   e.preventDefault()
   viewing.value = s
 }
-function onKey(e: KeyboardEvent) {
-  if (e.key === 'Escape') viewing.value = null
-}
-watch(viewing, (v) => {
-  document.documentElement.style.overflow = v ? 'hidden' : ''
-})
 </script>
 
 <template>
@@ -124,24 +114,13 @@ watch(viewing, (v) => {
   </section>
   <p v-if="!total" class="empty">조건에 맞는 세미나가 없습니다.</p>
 
-  <Teleport to="body">
-    <div v-if="viewing" class="viewer-backdrop" @click.self="viewing = null">
-      <div class="viewer" role="dialog" aria-modal="true" :aria-label="viewing.title">
-        <header>
-          <div class="viewer-title">
-            <strong>{{ viewing.title }}</strong>
-            <span>{{ viewing.speaker }}, {{ viewing.date.replace(/-/g, '.') }}</span>
-          </div>
-          <div class="viewer-actions">
-            <a :href="pdfUrl(viewing)" target="_blank" rel="noopener">새 탭에서 열기</a>
-            <a :href="pdfUrl(viewing)" download>다운로드</a>
-            <button aria-label="닫기" @click="viewing = null">✕</button>
-          </div>
-        </header>
-        <iframe :src="pdfUrl(viewing)" :title="viewing.title" />
-      </div>
-    </div>
-  </Teleport>
+  <PdfViewer
+    v-if="viewing"
+    :url="pdfUrl(viewing)"
+    :title="viewing.title"
+    :subtitle="`${viewing.speaker}, ${viewing.date.replace(/-/g, '.')}`"
+    @close="viewing = null"
+  />
 </template>
 
 <style scoped>
@@ -295,83 +274,5 @@ watch(viewing, (v) => {
 }
 .empty {
   color: var(--vp-c-text-2);
-}
-
-/* PDF 뷰어 */
-.viewer-backdrop {
-  position: fixed;
-  inset: 0;
-  z-index: 100;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 24px;
-  background: rgba(0, 0, 0, 0.6);
-}
-.viewer {
-  display: flex;
-  flex-direction: column;
-  width: min(1100px, 100%);
-  height: min(90vh, 900px);
-  border-radius: 12px;
-  overflow: hidden;
-  background: var(--vp-c-bg);
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
-}
-.viewer header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  padding: 12px 16px;
-  border-bottom: 1px solid var(--vp-c-divider);
-}
-.viewer-title {
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-}
-.viewer-title strong {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-.viewer-title span {
-  color: var(--vp-c-text-2);
-  font-size: 13px;
-}
-.viewer-actions {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  flex-shrink: 0;
-}
-.viewer-actions a {
-  padding: 6px 12px;
-  border-radius: 8px;
-  background: var(--vp-c-default-soft);
-  color: var(--vp-c-text-1);
-  font-size: 13px;
-  font-weight: 500;
-  text-decoration: none;
-}
-.viewer-actions a:hover {
-  color: var(--vp-c-brand-1);
-}
-.viewer-actions button {
-  width: 32px;
-  height: 32px;
-  border-radius: 8px;
-  font-size: 16px;
-  color: var(--vp-c-text-2);
-}
-.viewer-actions button:hover {
-  background: var(--vp-c-default-soft);
-}
-.viewer iframe {
-  flex: 1;
-  width: 100%;
-  border: 0;
-  background: #525659;
 }
 </style>

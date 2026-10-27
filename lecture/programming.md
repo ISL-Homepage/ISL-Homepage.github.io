@@ -1,4 +1,5 @@
 # 프로그래밍응용
 
-## 2학기
-* 프로그래밍 응용 페이지
+<!-- 공지는 data/lectures/<연도>-<학기>.yaml 에서 고칩니다. (README "강의 공지 올리기" 참고) -->
+
+<LectureCourse id="programming" />

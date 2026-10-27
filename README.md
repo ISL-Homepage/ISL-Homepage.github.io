@@ -13,7 +13,7 @@ npm run deploy -- "3주차 공지 추가"   # 커밋 메시지 지정
 `npm run deploy`는 아래 순서로 진행하고, 중간에 하나라도 실패하면 배포하지 않습니다.
 
 1. 새로 넣은 세미나 PDF를 `data/seminars.yaml`에 자동 추가
-2. 데이터 검사: yaml 형식, 날짜, 빠진 항목, 없는 PDF와 사진 등. 문제가 있으면 **파일과 줄 번호, 고칠 내용**을 보여 줍니다
+2. 데이터 검사: yaml 형식, 날짜, 빠진 항목, 없는 PDF와 사진, 강의 첨부파일 등. 문제가 있으면 **파일과 줄 번호, 고칠 내용**을 보여 줍니다
 3. 세미나 썸네일 생성, 사이트 빌드
 4. 바뀐 파일 목록을 보여 주고 확인을 받은 뒤 커밋, `git push`
 5. push 하면 GitHub Actions가 GitHub Pages에 배포합니다(몇 분 소요)
@@ -24,7 +24,8 @@ GitHub 웹에서 파일을 직접 고쳐 commit 해도 됩니다. 이때도 Acti
 
 | 하고 싶은 일 | 고칠 곳 |
 |---|---|
-| 실험 공지 올리기 | PDF를 `public/attachments/<폴더>/`에 넣고 `lecture/experiments.md`에 링크 한 줄 추가 |
+| 이번 주 실험 공지 열기 | `data/lectures/<연도>-<학기>.yaml`에서 그 주차 `open: false`를 `true`로 ([아래 설명](#강의-공지-올리기)) |
+| 새 학기 강의 준비 | 작년 학기 yaml을 복사해 새 파일 만들기 ([아래 설명](#새-학기-만들기)) |
 | 세미나 자료 올리기 | PDF를 `public/attachments/seminar/<연도>/`에 `YYYYMMDD_발표자_제목.pdf` 이름으로 넣기 (목록은 자동 추가) |
 | 논문 추가 | `data/publications.yaml`에 항목 하나 추가 |
 | 사람 추가, 졸업 처리, 소속 변경 | `data/people.yaml` (사진은 `public/images/people/`에 얼굴이 가운데 오는 정사각형으로) |
@@ -34,7 +35,7 @@ GitHub 웹에서 파일을 직접 고쳐 commit 해도 됩니다. 이때도 Acti
 | 상단 메뉴 | `.vitepress/config.mts`의 `nav` |
 
 - 글의 "최종 수정" 날짜는 git 커밋 시각으로 자동 표시됩니다. 날짜를 직접 적을 필요가 없습니다.
-- 링크는 사이트 기준 절대 경로로 씁니다. 예: `[다운로드](/attachments/2025_notice/2주차.pdf)`
+- md 파일에 직접 링크를 쓸 때는 사이트 기준 절대 경로로 씁니다. 예: `[다운로드](/attachments/2025_notice/2주차.pdf)`
   파일 이름에 공백이 있으면 `[다운로드](</attachments/2025_notice/2주차 실험 공지.pdf>)`처럼 `< >`로 감쌉니다.
 - 파일 이름에 `#`은 쓰지 않습니다.
 
@@ -88,6 +89,49 @@ features:
     link: /seminar/
 ```
 
+## 강의 공지 올리기
+
+강의 페이지(Lecture)는 학기마다 yaml 파일 하나로 관리합니다.
+
+```
+data/lectures/2026-spring.yaml   2026년 1학기 (전자회로실험)
+data/lectures/2026-fall.yaml     2026년 2학기 (프로그래밍응용)
+```
+
+화면에는 **가장 최근 연도**의 1학기, 2학기만 나옵니다. 지난 학기 파일은 지우지 않고 그대로 두면 됩니다(기록용).
+
+### 매주 공지 열기
+
+학기 초에 그 학기 공지를 모두 `open: false`로 적어 두고, 매주 해당 주차만 `true`로 바꿉니다.
+
+```yaml
+    notices:
+      - week: 2
+        file: lecture/2027-spring/2주차 실험 공지.pdf
+        open: true          # 공개
+      - week: 3
+        file: lecture/2027-spring/3주차 실험 공지.pdf
+        open: false         # "공개 예정"으로 흐리게 보임
+```
+
+- `file`은 `public/attachments/` 기준 경로입니다. 공백, 한글 파일 이름도 그대로 적으면 됩니다(`#`만 안 됨).
+- 마지막으로 연 공지에 `NEW` 표시가 붙습니다.
+- `title`을 안 적으면 "N주차 실험 공지"로 나옵니다. 중간고사처럼 파일 없는 주차는 `title`만 적습니다.
+- `week` 없이 `title`만 적은 공지(예: 프로젝트 설계 공지)는 목록 맨 아래에 나옵니다.
+- 상단 고정 자료(강의 계획서, 보고서 양식 등)는 `materials`에 적습니다.
+
+### 새 학기 만들기
+
+1. 작년 같은 학기 파일을 복사해 이름을 바꿉니다. 예: `2026-spring.yaml` → `2027-spring.yaml`
+2. 안의 `year`를 고치고, 공지의 `open`을 모두 `false`로, `file` 경로를 새 파일로 바꿉니다.
+3. PDF는 `public/attachments/lecture/2027-spring/`에 넣습니다.
+
+2027 파일이 생기는 순간 화면은 2027년만 보여 줍니다. 2학기 파일이 아직 없으면 2학기 칸은 "개설된 강의가 없습니다"로 나옵니다.
+
+새 과목을 추가하려면 yaml의 `courses`에 항목을 추가하고, `lecture/experiments.md`를 복사해 `lecture/<id>.md`를 만든 뒤 `id`만 바꿉니다. 상단 메뉴는 `.vitepress/config.mts`의 `nav`에 추가합니다.
+
+파일 이름, 학기, 중복 주차, 없는 첨부파일 등은 `npm run data`(빌드, 배포 때 자동)에서 줄 번호와 함께 알려 줍니다.
+
 ## 세미나 자료 올리기
 
 PDF를 `public/attachments/seminar/<연도>/`에 **`YYYYMMDD_발표자_제목.pdf`** 이름으로 넣으면 끝입니다.
@@ -120,6 +164,7 @@ PDF를 `public/attachments/seminar/<연도>/`에 **`YYYYMMDD_발표자_제목.pd
   authors: "Gil-Dong Hong, Yun-Ho Ko"
   title: "논문 제목"
   venue: "학술지 또는 학회 이름, Vol., pp., 날짜"
+  url: "https://doi.org/10.xxxx/xxxx"   # 선택. 있으면 제목이 링크가 됩니다 (DOI, 없으면 KCI/DBpia 등 논문 페이지)
 ```
 
 ## 로컬에서 보기
@@ -140,6 +185,7 @@ npm run data      # 데이터 반영과 검사만
 index.md                 홈 (hero, 연구 이미지 슬라이드, 카드)
 about/ people/ publication/ research/ lecture/ seminar/   각 메뉴 페이지
 data/                    세미나, 논문, 사람, 장비 데이터(yaml)와 로더
+data/lectures/           강의 학기별 데이터(yaml)
 public/images/           이미지
 public/attachments/      강의 첨부, 세미나 PDF
 scripts/                 세미나 PDF 반영, 데이터 검사, 썸네일 생성, 배포
