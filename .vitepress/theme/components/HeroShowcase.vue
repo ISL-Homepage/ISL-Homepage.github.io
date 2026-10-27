@@ -3,33 +3,50 @@ import { computed, onMounted, onUnmounted, ref } from 'vue'
 import { useData, withBase } from 'vitepress'
 
 // index.md front matter의 showcase 목록을 hero 오른쪽에서 차례로 보여 준다.
+// duration(초)을 적으면 그 슬라이드만 그만큼 머문다. GIF는 한 바퀴 길이로 맞추면 된다.
 interface Slide {
   src: string
   caption?: string
   link?: string
+  duration?: number
 }
 
 const { frontmatter } = useData()
 const slides = computed<Slide[]>(() => frontmatter.value.showcase ?? [])
-const interval = computed(() => (frontmatter.value.showcaseInterval ?? 5) * 1000)
+const defaultSeconds = computed(() => frontmatter.value.showcaseInterval ?? 5)
 
 const current = ref(0)
-const paused = ref(false)
-let timer: ReturnType<typeof setInterval> | undefined
+// 슬라이드가 바뀔 때마다 증가시켜 GIF를 처음부터 다시 재생한다.
+const plays = ref(0)
+let timer: ReturnType<typeof setTimeout> | undefined
+let autoplay = false
+
+function show(i: number) {
+  current.value = i
+  plays.value++
+  schedule()
+}
+
+function schedule() {
+  clearTimeout(timer)
+  if (!autoplay || slides.value.length < 2) return
+  const seconds = slides.value[current.value]?.duration ?? defaultSeconds.value
+  timer = setTimeout(() => show((current.value + 1) % slides.value.length), seconds * 1000)
+}
+
+function pause() {
+  clearTimeout(timer)
+}
 
 onMounted(() => {
-  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
-  timer = setInterval(() => {
-    if (!paused.value && slides.value.length > 1) {
-      current.value = (current.value + 1) % slides.value.length
-    }
-  }, interval.value)
+  autoplay = !window.matchMedia('(prefers-reduced-motion: reduce)').matches
+  schedule()
 })
-onUnmounted(() => clearInterval(timer))
+onUnmounted(() => clearTimeout(timer))
 </script>
 
 <template>
-  <div v-if="slides.length" class="showcase" @mouseenter="paused = true" @mouseleave="paused = false">
+  <div v-if="slides.length" class="showcase" @mouseenter="pause" @mouseleave="schedule">
     <div class="frame">
       <component
         :is="s.link ? 'a' : 'div'"
@@ -40,7 +57,12 @@ onUnmounted(() => clearInterval(timer))
         :class="{ active: i === current }"
         :aria-hidden="i !== current"
       >
-        <img :src="withBase(s.src)" :alt="s.caption || ''" :loading="i === 0 ? 'eager' : 'lazy'" />
+        <img
+          :key="i === current ? plays : -1"
+          :src="withBase(s.src)"
+          :alt="s.caption || ''"
+          :loading="i === 0 ? 'eager' : 'lazy'"
+        />
       </component>
     </div>
     <div class="footer">
@@ -51,7 +73,7 @@ onUnmounted(() => clearInterval(timer))
           :key="s.src"
           :class="{ active: i === current }"
           :aria-label="s.caption || `${i + 1}번째`"
-          @click="current = i"
+          @click="show(i)"
         />
       </span>
     </div>

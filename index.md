@@ -2,7 +2,7 @@
 # 홈 화면은 이 파일의 front matter만 고치면 됩니다.
 # - hero: 상단 큰 제목/문구/버튼/이미지
 # - showcase: hero 오른쪽에서 차례로 바뀌는 연구 이미지(GIF 가능). 순서대로 표시
-#   showcaseInterval: 바뀌는 간격(초)
+#   showcaseInterval: 기본으로 머무는 시간(초). 슬라이드마다 duration 으로 따로 정할 수 있음
 # - features: 아래 카드(타일). title/details/link/icon 수정
 # 이미지는 public/images/ 에 넣고 /images/파일명 으로 적습니다.
 layout: home
@@ -21,9 +21,14 @@ hero:
 
 showcaseInterval: 5
 showcase:
-  - src: /images/isl_main3.gif
+  - src: /images/showcase_slam.gif
     caption: Visual SLAM (RAF Set SLAM)
     link: /research/interests
+    duration: 8
+  - src: /images/showcase_gan.gif
+    caption: GAN 기반 얼굴 영상 생성
+    link: /research/interests
+    duration: 7.7
   - src: /images/FRUC01.png
     caption: Frame Rate Up Conversion
     link: /research/interests
@@ -32,9 +37,6 @@ showcase:
     link: /research/interests
   - src: /images/3D03.png
     caption: Active Stereo 3D 복원
-    link: /research/interests
-  - src: /images/SLAM02.png
-    caption: RAFSet SLAM 결과
     link: /research/interests
 
 features:
