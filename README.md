@@ -27,7 +27,8 @@ GitHub 웹에서 파일을 직접 고쳐 commit 해도 됩니다. 이때도 Acti
 | 실험 공지 올리기 | PDF를 `public/attachments/<폴더>/`에 넣고 `lecture/experiments.md`에 링크 한 줄 추가 |
 | 세미나 자료 올리기 | PDF를 `public/attachments/seminar/<연도>/`에 `YYYYMMDD_발표자_제목.pdf` 이름으로 넣기 (목록은 자동 추가) |
 | 논문 추가 | `data/publications.yaml`에 항목 하나 추가 |
-| 사람 추가, 졸업 처리 | `data/people.yaml` (사진은 `public/images/`) |
+| 사람 추가, 졸업 처리, 소속 변경 | `data/people.yaml` (사진은 `public/images/people/`에 얼굴이 가운데 오는 정사각형으로) |
+| 연구 장비 추가 | `data/equipment.yaml` (사진은 `public/images/equipment/`) |
 | 홈 화면 문구, 이미지, 카드 | `index.md` 맨 위 front matter ([아래 설명](#홈-화면-바꾸기)) |
 | 상단 메뉴 | `.vitepress/config.mts`의 `nav` |
 
@@ -137,7 +138,7 @@ npm run data      # 데이터 반영과 검사만
 ```
 index.md                 홈 (hero, 연구 이미지 슬라이드, 카드)
 about/ people/ publication/ research/ lecture/ seminar/   각 메뉴 페이지
-data/                    세미나, 논문, 사람 데이터(yaml)와 로더
+data/                    세미나, 논문, 사람, 장비 데이터(yaml)와 로더
 public/images/           이미지
 public/attachments/      강의 첨부, 세미나 PDF
 scripts/                 세미나 PDF 반영, 데이터 검사, 썸네일 생성, 배포

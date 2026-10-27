@@ -97,12 +97,29 @@ const unknownKeys = (obj, allowed) => Object.keys(obj).filter((k) => !allowed.in
     }
     for (const m of g.members) {
       if (blank(m?.name)) errors.push(`${at} (${g.group}): name(이름)이 비어 있는 사람이 있습니다.`)
-      if (m?.photo && !existsSync(join(paths.images, m.photo))) {
-        errors.push(`${at} (${g.group}, ${m.name}): 사진이 없습니다: public/images/${m.photo}`)
+      if (m?.photo && !existsSync(join(paths.peopleImages, m.photo))) {
+        errors.push(`${at} (${g.group}, ${m.name}): 사진이 없습니다: public/images/people/${m.photo}`)
       }
     }
   }
 }
 
+// 연구 장비
+{
+  const { name, items } = load(paths.equipment)
+  const CATS = ['camera', 'sensor', 'computing']
+  for (const [e, line] of items) {
+    const at = `${name} ${line}번째 줄`
+    if (blank(e?.name)) errors.push(`${at}: name(장비 이름)이 비어 있습니다.`)
+    if (e?.category && !CATS.includes(e.category)) {
+      errors.push(`${at}: category는 ${CATS.join(', ')} 중 하나입니다. (지금: ${e.category})`)
+    }
+    if (e?.photo && !existsSync(join(paths.equipmentImages, e.photo))) {
+      errors.push(`${at}: 사진이 없습니다: public/images/equipment/${e.photo}`)
+    }
+    if (e?.specs && !Array.isArray(e.specs)) errors.push(`${at}: specs는 "- " 로 시작하는 목록이어야 합니다.`)
+  }
+}
+
 if (errors.length) fail('데이터 검사', errors)
-console.log('✔ 데이터 검사 통과 (세미나, 논문, 사람)')
+console.log('✔ 데이터 검사 통과 (세미나, 논문, 사람, 장비)')

@@ -8,8 +8,10 @@ export const paths = {
   seminars: join(root, 'data/seminars.yaml'),
   publications: join(root, 'data/publications.yaml'),
   people: join(root, 'data/people.yaml'),
+  equipment: join(root, 'data/equipment.yaml'),
   seminarPdfs: join(root, 'public/attachments/seminar'),
-  images: join(root, 'public/images')
+  peopleImages: join(root, 'public/images/people'),
+  equipmentImages: join(root, 'public/images/equipment')
 }
 
 const red = (s) => `\x1b[31m${s}\x1b[0m`

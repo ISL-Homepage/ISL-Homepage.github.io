@@ -1,81 +1,109 @@
+---
+aside: false
+---
+
 # About
 
-## Introduction
+<div class="about-lead">
+  <p class="kicker">Image System Laboratory</p>
+  <p class="headline">각종 영상 처리 및 인식 기술에 대한 연구를 합니다.</p>
+  <p>
+    영상 처리 및 인식에 필요한 요소 알고리즘을 개발, 검증하고 이를 시스템으로 구현하는 것을 목표로 합니다.
+    영상을 분석하고 해석하는 영상 처리 및 인식 기술과 함께, 임베디드 시스템 구현 기술,
+    영상 전송을 위한 압축 기술(H.264, SVC), 영상 감시 시스템의 인증을 위한 워터마킹 기술을 연구합니다.
+  </p>
+</div>
 
-![ISL Introduction](/images/intro_text.jpg)
+## 응용 분야
 
-영상 처리 및 인식에 필요한 요소 알고리즘들을 개발, 검증하고 이를 시스템화 하는 것을 목표로 한다. 주요 관심 응용 대상은 산업/국방용 영상 감시 시스템, 공장 자동화를 위한 비전 시스템, 다차원 영상을 이용한 검사 장비, 의료 영상 분석 시스템, 인간형 로봇을 위한 비전 시스템, 증강 현실 시스템 등이다. 이를 위해 영상을 분석 해석하기 위한 각종 영상 처리 및 인식 기술에 대한 연구 외에도 임베디드 시스템을 통한 구현 기술, 영상 전송을 위한 압축 기술(H.264, SVC), 영상 감시 시스템의 인증을 위한 워터마킹 기술들을 연구 한다.
+<div class="about-areas">
+  <div><strong>영상 감시</strong><span>산업, 국방용 영상 감시 시스템</span></div>
+  <div><strong>공장 자동화</strong><span>비전 기반 검사와 측정</span></div>
+  <div><strong>다차원 영상 검사</strong><span>3차원 형상 측정, 검사 장비</span></div>
+  <div><strong>의료 영상</strong><span>의료 영상 분석 시스템</span></div>
+  <div><strong>로봇 비전</strong><span>SLAM, 위치 추정, 인간형 로봇 비전</span></div>
+  <div><strong>증강 현실</strong><span>실시간 영상 정합과 추적</span></div>
+</div>
 
-## Camera list
-### ZED Stereo Camera 
+## 핵심 기술
 
-<img src="/images/zed2.png" width="300" alt="">
+<div class="about-tags">
+  <span>영상 처리 및 인식</span>
+  <span>컴퓨터 비전</span>
+  <span>딥러닝</span>
+  <span>Visual SLAM</span>
+  <span>스테레오 비전, 3D 복원</span>
+  <span>영상 화질 개선</span>
+  <span>영상 압축 (H.264, SVC)</span>
+  <span>워터마킹</span>
+  <span>임베디드 시스템 구현</span>
+</div>
 
-* High-Resolution and High Frame-rate 3D Video Capture
-* Depth Perception indoors and outdoors at up to 20m
-* 6-DOF Positional Tracking
-* Large-scale 3D Mapping using ZEDfu
+자세한 연구 내용은 [Research Interests](/research/interests)와 [Project](/research/project)에서 볼 수 있습니다.
 
-### NVIDIA Jetson TX1
+## 연구 장비
 
-<img src="/images/tx1.png" width="300" alt="">
+<!-- 장비 목록은 data/equipment.yaml 에서 관리합니다. -->
+<EquipmentGrid />
 
-* NVIDIA HPC
-* 1 TFLOP/s 256-core with NVIDIA Maxwell™ Architecture
-* 64-bit ARM® A57 CPUs
-* 4 GB LPDDR4 25.6 GB/s
-
-### NVIDIA Jetson TK1
-
-<img src="/images/tk1.png" width="300" alt="">
-
-* NVIDIA HPC
-* NVIDIA Kepler GPU with 192 CUDA Cores
-* NVIDIA 4-Plus-1™ Quad-Core ARM® Cortex™-A15 CPU
-* 2 GB x16 Memory with 64-bit Width
-
-### SICK LMS111
-
-<img src="/images/lms111.jpg" width="300" alt="">
-
-* SICK LiDAR
-* Range (m) : 0.5 – 20 (18 with reflectivity below 10%)
-* Field of View (degrees) : 270
-* Angular Resolution (degrees) : 0.25, 0.5
-
-  
-### FLIR P620
-
-<img src="/images/flir.jpg" width="300" alt="">
-
-* 열화상 카메라
-* 적외선을 이용하여 물체의 온도를 측정하는 장비
-
-### Frame Grabber
-
-<img src="/images/frame-grabber.bmp" width="300" alt="">
-
-* 아날로그 형태의 영상 신호를 컴퓨터에서 처리 가능한 디지털 신호로 변환하는 장치
-
-### Dragonfly 2
-
-<img src="/images/dragonfly2.bmp" width="300" alt="">
-
-* ITS(차량 번호 인식)
-* Robot Vision
-* 얼굴 인식 등의 보안 및 일반 영상 검사 분야
-
-### Flea 2
-
-<img src="/images/flea2.bmp" width="300" alt="">
-
-* 반도체, 디스플레이 관련 검사
-* ITS(차량 번호 인식)
-* 보안 솔루션 및 일반 영상 분야
-
-### Bumblebee2
-
-<img src="/images/Bumblebee2.jpg" width="300" alt="">
-
-* 스테레오 비전 카메라
-* 3차원 데이터 제공
+<style>
+.about-lead {
+  margin-top: 8px;
+  padding: 28px 28px 20px;
+  border-radius: 16px;
+  background:
+    radial-gradient(circle at 100% 0%, rgba(240, 163, 94, 0.22), transparent 55%),
+    radial-gradient(circle at 0% 100%, rgba(201, 37, 44, 0.12), transparent 60%),
+    var(--vp-c-bg-soft);
+}
+.about-lead .kicker {
+  margin: 0;
+  color: var(--vp-c-brand-1);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.about-lead .headline {
+  margin: 6px 0 12px;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+.about-lead p:last-child {
+  color: var(--vp-c-text-2);
+}
+.about-areas {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+  margin-top: 16px;
+}
+.about-areas div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 16px;
+  border: 1px solid var(--vp-c-divider);
+  border-left: 3px solid var(--vp-c-brand-1);
+  border-radius: 10px;
+}
+.about-areas span {
+  color: var(--vp-c-text-2);
+  font-size: 14px;
+}
+.about-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+.about-tags span {
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: var(--vp-c-brand-soft);
+  color: var(--vp-c-brand-1);
+  font-size: 14px;
+  font-weight: 500;
+}
+</style>

@@ -6,7 +6,8 @@ import { execFileSync } from 'node:child_process'
 const dataDeps: Record<string, string[]> = {
   'seminar/index.md': ['data/seminars.yaml'],
   'people/index.md': ['data/people.yaml'],
-  'publication/index.md': ['data/publications.yaml']
+  'publication/index.md': ['data/publications.yaml'],
+  'about/index.md': ['data/equipment.yaml']
 }
 
 function gitTimestamp(file: string): number {

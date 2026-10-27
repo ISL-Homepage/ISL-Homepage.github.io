@@ -1,0 +1,72 @@
+# About 페이지의 연구 장비. 사진은 public/images/equipment/ 에 넣고 파일명만 적습니다.
+# category: camera | sensor | computing (카드 위 분류 칩)
+
+- name: ZED Stereo Camera
+  category: camera
+  photo: zed2.png
+  specs:
+    - High-Resolution and High Frame-rate 3D Video Capture
+    - Depth Perception indoors and outdoors at up to 20m
+    - 6-DOF Positional Tracking
+    - Large-scale 3D Mapping using ZEDfu
+
+- name: Bumblebee2
+  category: camera
+  photo: bumblebee2.jpg
+  specs:
+    - 스테레오 비전 카메라
+    - 3차원 데이터 제공
+
+- name: Dragonfly 2
+  category: camera
+  photo: dragonfly2.png
+  specs:
+    - ITS(차량 번호 인식)
+    - Robot Vision
+    - 얼굴 인식 등의 보안 및 일반 영상 검사 분야
+
+- name: Flea 2
+  category: camera
+  photo: flea2.png
+  specs:
+    - 반도체, 디스플레이 관련 검사
+    - ITS(차량 번호 인식)
+    - 보안 솔루션 및 일반 영상 분야
+
+- name: FLIR P620
+  category: camera
+  photo: flir.jpg
+  specs:
+    - 열화상 카메라
+    - 적외선을 이용하여 물체의 온도를 측정하는 장비
+
+- name: SICK LMS111
+  category: sensor
+  photo: lms111.jpg
+  specs:
+    - SICK LiDAR
+    - "Range: 0.5 – 20 m (18 m with reflectivity below 10%)"
+    - "Field of View: 270°"
+    - "Angular Resolution: 0.25°, 0.5°"
+
+- name: Frame Grabber
+  category: sensor
+  photo: frame-grabber.png
+  specs:
+    - 아날로그 영상 신호를 컴퓨터에서 처리 가능한 디지털 신호로 변환하는 장치
+
+- name: NVIDIA Jetson TX1
+  category: computing
+  photo: tx1.png
+  specs:
+    - 1 TFLOP/s 256-core NVIDIA Maxwell™ Architecture
+    - 64-bit ARM® A57 CPUs
+    - 4 GB LPDDR4 25.6 GB/s
+
+- name: NVIDIA Jetson TK1
+  category: computing
+  photo: tk1.png
+  specs:
+    - NVIDIA Kepler GPU with 192 CUDA Cores
+    - NVIDIA 4-Plus-1™ Quad-Core ARM® Cortex™-A15 CPU
+    - 2 GB x16 Memory with 64-bit Width
